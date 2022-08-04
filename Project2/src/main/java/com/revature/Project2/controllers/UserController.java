@@ -17,10 +17,10 @@ import static com.revature.Project2.utils.ClientMessageUtils.*;
 @RequestMapping("app")
 public class UserController {
 
-    @Autowired
+   @Autowired
     private UserService userService;
 
-    @GetMapping(value = "user", consumes = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = "user") //consumes = {MediaType.APPLICATION_JSON_VALUE})
     public User getById(@RequestParam int id){
         return userService.getUserById(id);
     }
@@ -31,7 +31,7 @@ public class UserController {
     }
 
     @PostMapping("user")
-    @ResponseStatus(HttpStatus.I_AM_A_TEAPOT)
+    @ResponseStatus(HttpStatus.OK)
     public ClientMessage createUser(@RequestBody User user){
         return userService.createUser(user) ? CREATION_SUCCESSFUL : CREATION_FAILED;
     }

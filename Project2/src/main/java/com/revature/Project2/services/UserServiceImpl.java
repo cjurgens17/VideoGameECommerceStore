@@ -1,12 +1,14 @@
 package com.revature.Project2.services;
 
 import com.revature.Project2.models.User;
-import com.revature.Project2.repos.CartRepo;
 import com.revature.Project2.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-
+@Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
     @Autowired
