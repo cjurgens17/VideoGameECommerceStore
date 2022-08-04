@@ -12,10 +12,10 @@ import org.springframework.transaction.annotation.Transactional;
 public interface UserRepo extends JpaRepository<User, Integer> {
 
     @Modifying
-    @Query(value = "UPDATE user SET username=?1 WHERE user_id=?2", nativeQuery = true)
+    @Query(value = "UPDATE userz SET username=?1 WHERE user_id=?2", nativeQuery = true)
     public int update(String username, int id);
 
-    @Query(value = "SELECT * FROM candies WHERE c_id=?1", nativeQuery = true)
+    @Query(value = "SELECT * FROM userz WHERE c_id=?1", nativeQuery = true)
     public User findById(int id);
 
 

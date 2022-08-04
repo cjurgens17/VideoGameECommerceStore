@@ -5,7 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "user")
+@Table(name = "userz")
 @Data
 public class User {
 
@@ -20,18 +20,20 @@ public class User {
     @Column(name = "lastname")
     private String lastName;
 
-    @Column(name = "username", unique = true)
+    @Column(name = "username", columnDefinition = "VARCHAR(15) UNIQUE NOT NULL")
     private String username;
 
-    @ManyToOne(cascade = {CascadeType.ALL})
-    @JoinColumn(name = "user_cart", referencedColumnName = "c_id")
+    @OneToOne(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "user_cart", referencedColumnName = "cart_id")
     private Cart cart;
 
     public User(){
+
         super();
     }
 
     public User(int id, String firstName, String lastName, String username, Cart cart) {
+        super();
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -40,6 +42,7 @@ public class User {
     }
 
     public User(String firstName, String lastName, String username, Cart cart) {
+        super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
