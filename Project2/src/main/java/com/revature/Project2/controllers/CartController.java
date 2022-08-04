@@ -20,7 +20,7 @@ public class CartController {
     @Autowired
     private CartService cartService;
 
-    @GetMapping(value ="/cart", consumes = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value ="/cart") //consumes = {MediaType.APPLICATION_JSON_VALUE})
     public Cart getById(@RequestParam int id) {
 
         return cartService.getCartById(id);
