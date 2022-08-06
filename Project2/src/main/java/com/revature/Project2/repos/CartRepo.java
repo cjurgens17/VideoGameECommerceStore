@@ -2,11 +2,14 @@ package com.revature.Project2.repos;
 
 
 import com.revature.Project2.models.Cart;
+import com.revature.Project2.models.Products;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Repository
 @Transactional

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 import static com.revature.Project2.utils.ClientMessageUtils.*;
-
+@CrossOrigin(origins = {})
 @RestController
 @RequestMapping("/app")
 public class ProductsController {

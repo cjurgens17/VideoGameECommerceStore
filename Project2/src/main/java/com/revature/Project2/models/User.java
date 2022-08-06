@@ -23,6 +23,9 @@ public class User {
     @Column(name = "username", columnDefinition = "VARCHAR(15) UNIQUE NOT NULL")
     private String username;
 
+    @Column(name = "pass_word", nullable = false)
+    private String password;
+
     @OneToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "user_cart", referencedColumnName = "cart_id")
     private Cart cart;
