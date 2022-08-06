@@ -3,6 +3,8 @@ package com.revature.Project2.models;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "cartz")
@@ -16,10 +18,13 @@ public class Cart {
     private int id;
 
     @Column(name = "items")
-    private String items;
+    private  String items;
 
     @Column(name = "itemnum")
     private int itemNum;
+
+//    @Transient
+//    List<Products> productsList = new ArrayList<>();
 
     public Cart(){
         super();

@@ -4,11 +4,14 @@ package com.revature.Project2.models;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "products")
 @Data
-public class Products {
+public class Products implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +23,15 @@ public class Products {
 
     @Column(name = "quantity")
     private int quantity;
+
+    @Column(name = "price")
+    private int price;
+
+    @ManyToOne(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "products_cart", referencedColumnName = "cart_id")
+    private Cart cart;
+
+
 
     public Products(){
         super();
