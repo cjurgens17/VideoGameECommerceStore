@@ -5,7 +5,7 @@
 
 // let welcomeScreen = document.getElementById("welcome_screen");
 // welcomeScreen.innerText = `Welcome ${currentUser.firstName}, Check Todays Horoscope`;
-
+var cart = [];
 
 let button = document.getElementById("button");
 
@@ -27,20 +27,21 @@ button.addEventListener('click', async() => {
 
         console.log(json_data)
 
-        // var input = document.getElementById("input");
-        var horoscope = document.createElement('h2');
-
-
-        horoscope.innerHTML = `Testing data get: ${json_data}`;
-        
+        localStorage.setItem('productStorage', JSON.stringify(json_data));
 
         
-
        
+        let products = localStorage.getItem('productStorage');  
+        
 
-       
-       
+        console.log(products);
 
+
+        cart.push(json_data[0].productName + " " + json_data[0].price);
+
+        console.log(cart);
+
+        console.log(cart[0]);
 
 
 
@@ -51,4 +52,19 @@ button.addEventListener('click', async() => {
 
 
 })
+
+
+//cart array
+
+// let cart = [{}];
+// let products = localStorage.getItem('productStorage');
+
+
+// cart.push(products[1]);
+
+// console.log(cart);
+
+
+
+
 
