@@ -1,0 +1,26 @@
+| {% include 'variables' %}
+
+.jumbotron
+    section.container
+        .row
+            article.col-md-10.guide
+                for section, anchor in docs.guide
+                    h2(id= anchor)= section.title
+                    != partial('sections/' + anchor)
+
+                    for subsection, subanchor in section.sections
+                        h3(id= anchor + '-' + subanchor)= subsection.title
+                        != partial('sections/' + anchor + '/' + subanchor)
+
+            aside.col-md-2.hidden-sm.hidden-xs
+                .aside
+                    nav#nav(data-spy="affix", data-offset-top="102")
+                        ul.nav.nav-docs
+                            for section, anchor in docs.guide
+                                li
+                                    a(href= '#' + anchor)= section.title
+
+                                    ul.nav
+                                        for subsection, subanchor in section.sections
+                                            li
+                                                a(href= '#' + anchor + '-' + subanchor)= subsection.nav || subsection.title
