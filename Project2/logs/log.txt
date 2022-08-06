@@ -305,3 +305,9 @@
 2022-08-06 17:19:20 INFO  LoggingAspect:20 - Before advice for: class com.revature.Project2.services.ProductsServiceImpl: getAllProducts
 2022-08-06 17:19:20 INFO  LoggingAspect:25 - After advice for: class com.revature.Project2.services.ProductsServiceImpl: getAllProducts
 2022-08-06 17:19:20 INFO  LoggingAspect:25 - After advice for: class com.revature.Project2.controllers.ProductsController: getAll
+2022-08-06 18:55:35 INFO  LoggingAspect:20 - Before advice for: class com.revature.Project2.controllers.CartController: createCart
+2022-08-06 18:55:35 INFO  LoggingAspect:20 - Before advice for: class com.revature.Project2.services.CartServiceImpl: createCart
+2022-08-06 18:55:35 INFO  LoggingAspect:20 - Before advice for: class jdk.proxy4.$Proxy131: save
+2022-08-06 18:55:35 INFO  LoggingAspect:25 - After advice for: class jdk.proxy4.$Proxy131: save
+2022-08-06 18:55:35 INFO  LoggingAspect:25 - After advice for: class com.revature.Project2.services.CartServiceImpl: createCart
+2022-08-06 18:55:36 INFO  LoggingAspect:25 - After advice for: class com.revature.Project2.controllers.CartController: createCart
