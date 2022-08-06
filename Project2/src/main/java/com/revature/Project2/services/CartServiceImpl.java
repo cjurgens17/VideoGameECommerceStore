@@ -23,7 +23,7 @@ public class CartServiceImpl implements CartService {
         this.cartRepo = cartRepo;
     }
 
-    @Override
+    @Override //list of products
     public boolean createCart(Cart cart) {
         int primaryKey = cartRepo.save(cart).getId();
         return (primaryKey > 0) ? true: false;
