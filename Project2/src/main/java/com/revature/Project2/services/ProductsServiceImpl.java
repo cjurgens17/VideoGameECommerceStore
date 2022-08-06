@@ -36,12 +36,13 @@ public class ProductsServiceImpl implements ProductsService {
 
     @Override
     public List<Products> getAllProducts() {
+
         return productsRepo.findAll();
     }
 
     @Override
     public int updateProducts(Products products) {
-        return productsRepo.update(products.getQuantity(),products.getProductId());
+        return productsRepo.update(products.getQuantity() ,products.getProductId());
     }
 
     @Override
