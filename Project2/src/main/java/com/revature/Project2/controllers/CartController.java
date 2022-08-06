@@ -12,7 +12,7 @@ import java.util.List;
 
 import static com.revature.Project2.utils.ClientMessageUtils.*;
 
-//CrossOrigin if CORS Exception
+@CrossOrigin(origins = {})
 @RestController
 @RequestMapping("app")
 public class CartController {
@@ -33,7 +33,7 @@ public class CartController {
     }
 
     @PostMapping("cart")
-    @ResponseStatus(HttpStatus.I_AM_A_TEAPOT)
+    @ResponseStatus(HttpStatus.ACCEPTED)
     public ClientMessage createCart(@RequestBody Cart cart){
         return cartService.createCart(cart) ? CREATION_SUCCESSFUL : CREATION_FAILED;
     }

@@ -12,7 +12,7 @@ import java.util.List;
 
 import static com.revature.Project2.utils.ClientMessageUtils.*;
 
-//use @CrossOrigin(origins = {http of origin error}) if we run into a CORS exception
+@CrossOrigin(origins = {})
 @RestController
 @RequestMapping("app")
 public class UserController {
