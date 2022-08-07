@@ -12,14 +12,25 @@ function logOut() {
     window.location.replace('index.html');
 }
 
-// let loggingOut = document.getElementById("logging-out");
-
-// loggingOut.innerHTML = `Successfully Signed Out!`;
-
 // Cart HTML Function
 function goToCart() {
-    // localStorage.getItem('productStorage');
+    items = localStorage.getItem('cartInventory');
     window.location.replace("cart.html");
 
+    let cart = document.getElementById("items");
+    cart.append(items);
+
     console.log('Page Changed.');
+}
+
+// Display Order
+function displayOrder() {
+    let order = localStorage.getItem('cartInventory');
+
+    let items = document.getElementById('items');
+
+    for (item in items) {
+        item.append(item[i]);
+        item.append(document.createElement("tr"));
+    }
 }
