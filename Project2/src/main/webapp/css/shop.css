@@ -89,13 +89,18 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+img{
+  float: inline-start;
+  width:  200px;
+  height: 200px;
+  object-fit: cover;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
   background-color: currentColor;
   border: 0;
-
-
   opacity: 0.25;
 }
 
@@ -4548,10 +4553,6 @@ textarea.form-control-lg {
   padding: 1rem 1rem;
 }
 
-.card-holder{
-  padding-left: 15%;
-}
-
 .card-title {
   margin-bottom: 0.5rem;
 }
@@ -7979,12 +7980,6 @@ textarea.form-control-lg {
   visibility: hidden !important;
 }
 
-.WebContainer{
-  width:100%;
-  min-width:1000px;
-  height:auto;
-}
-
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -11298,3 +11293,5 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+
