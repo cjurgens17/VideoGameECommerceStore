@@ -10,7 +10,7 @@ checkButton.addEventListener("click", async() => {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({id: 1, items: 'Nintendo 64', itemNum: 1})
+        body: JSON.stringify({items: 'PlayStation', itemNum: 1})
       });
       const content = await rawResponse.json();
     
