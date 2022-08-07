@@ -1,6 +1,7 @@
 let loginButton = document.getElementById("login-button");
+
 // let signUpButton = document.getElementById("signUpButton");
-console.log(loginButton);
+// console.log(loginButton);
 //console.log(signUpButton);
 
 
@@ -22,9 +23,10 @@ loginButton.addEventListener('click', async() => {
 
         console.log(json_data)
 
-        localStorage.setItem('currentUser', JSON.stringify(json_data));
+         localStorage.setItem('currentUser', JSON.stringify(json_data));
+        
 
-        window.location.replace("index.html");
+        window.location.replace("shop.html");
 
         
        
@@ -49,3 +51,35 @@ loginButton.addEventListener('click', async() => {
 
 
 })
+
+
+
+
+// loginButton.addEventListener("click", async() => {
+
+//     try{
+
+//     const rawResponse = await fetch('http://localhost:8080/app/username', {
+
+//         method: 'POST',
+
+//         headers: {
+//           'Accept': 'application/json',
+//           'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({username: "Buddy123"})
+//       });
+//       const content = await rawResponse.json()
+    
+//       console.log(content);
+
+      
+
+//         localStorage.setItem('currentUser', JSON.stringify(content));
+
+//     }catch(error){
+//         console.log(error)
+//     }
+
+//         // window.location.replace("shop.html");
+//     });

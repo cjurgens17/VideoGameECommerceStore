@@ -19,9 +19,9 @@ public class UserController {
 
    @Autowired
     private UserService userService;
-    @GetMapping("user")
-    public User getById(@RequestParam int id){
-        return userService.getUserById(id);
+    @PostMapping(path="/username")
+    public User getByUsername(@RequestBody String username){
+        return userService.getUserByUsername(username);
     }
 
     @GetMapping("users")
