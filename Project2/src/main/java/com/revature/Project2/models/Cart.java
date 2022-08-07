@@ -21,6 +21,9 @@ public class Cart {
     @Column(name = "itemnum")
     private int itemNum;
 
+    @Column( name= "item_price", nullable = false)
+    double price;
+
     public Cart(){
         super();
     }

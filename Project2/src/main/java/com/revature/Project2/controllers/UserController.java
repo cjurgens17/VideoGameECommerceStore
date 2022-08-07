@@ -14,29 +14,29 @@ import static com.revature.Project2.utils.ClientMessageUtils.*;
 
 //use @CrossOrigin(origins = {http of origin error}) if we run into a CORS exception
 @RestController
-@RequestMapping("app")
+@RequestMapping("/app")
 public class UserController {
 
    @Autowired
     private UserService userService;
 
-    @GetMapping(value = "user") //consumes = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = "/user") //consumes = {MediaType.APPLICATION_JSON_VALUE})
     public User getById(@RequestParam int id){
         return userService.getUserById(id);
     }
 
-    @GetMapping("users")
+    @GetMapping("/users")
     public List<User> getAll(){
         return userService.getAllUsers();
     }
 
-    @PostMapping("user")
+    @PostMapping("/user")
     @ResponseStatus(HttpStatus.OK)
     public ClientMessage createUser(@RequestBody User user){
         return userService.createUser(user) ? CREATION_SUCCESSFUL : CREATION_FAILED;
     }
 
-    @PutMapping("user")
+    @PutMapping("/user")
     public ClientMessage updateUser(@RequestBody User user){
         return userService.updateUser(user) >0? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 
