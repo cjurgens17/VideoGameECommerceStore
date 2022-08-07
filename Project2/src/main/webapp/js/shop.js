@@ -16,17 +16,13 @@ button0.addEventListener('click', async() => {
 
         console.log(json_data)
 
-        localStorage.setItem('productStorage', JSON.stringify(json_data));
-            
-        let products = localStorage.getItem('productStorage');    
+        let products = cart.push(json_data[0].productName + " " + json_data[0].price);
+
+        products.setItem('cartInventory');
 
         console.log(products);
 
-        cart.push(json_data[0].productName + " " + json_data[0].price);
-
         console.log(cart);
-
-        console.log(cart[0]);
 
     }catch(error){
         console.log(error);
@@ -49,17 +45,13 @@ button1.addEventListener('click', async() => {
 
         console.log(json_data)
 
-        localStorage.setItem('productStorage', JSON.stringify(json_data));
-            
-        let products = localStorage.getItem('productStorage');    
+        let products = cart.push(json_data[1].productName + " " + json_data[1].price);
+
+        products.setItem('cartInventory');
 
         console.log(products);
 
-        cart.push(json_data[1].productName + " " + json_data[1].price);
-
         console.log(cart);
-
-        console.log(cart[1]);
 
     }catch(error){
         console.log(error);
@@ -80,19 +72,15 @@ button2.addEventListener('click', async() => {
 
         const json_data = await raw_response.json();
 
-        console.log(json_data)
+        console.log(json_data)    
 
-        localStorage.setItem('productStorage', JSON.stringify(json_data));
-            
-        let products = localStorage.getItem('productStorage');    
+        let products = cart.push(json_data[2].productName + " " + json_data[2].price);
+
+        products.setItem('cartInventory');
 
         console.log(products);
 
-        cart.push(json_data[2].productName + " " + json_data[2].price);
-
         console.log(cart);
-
-        console.log(cart[2]);
 
     }catch(error){
         console.log(error);
@@ -114,18 +102,14 @@ button3.addEventListener('click', async() => {
         const json_data = await raw_response.json();
 
         console.log(json_data)
-
-        localStorage.setItem('productStorage', JSON.stringify(json_data));
             
-        let products = localStorage.getItem('productStorage');    
+        let products = cart.push(json_data[3].productName + " " + json_data[3].price);
+
+        products.setItem('cartInventory');
 
         console.log(products);
-
-        cart.push(json_data[3].productName + " " + json_data[3].price);
-
+    
         console.log(cart);
-
-        console.log(cart[3]);
 
     }catch(error){
         console.log(error);
@@ -147,18 +131,14 @@ button4.addEventListener('click', async() => {
         const json_data = await raw_response.json();
 
         console.log(json_data)
-
-        localStorage.setItem('productStorage', JSON.stringify(json_data));
             
-        let products = localStorage.getItem('productStorage');    
+        let products = cart.push(json_data[4].productName + " " + json_data[4].price);
+        
+        products.setItem('cartInventory');
 
         console.log(products);
 
-        cart.push(json_data[4].productName + " " + json_data[4].price);
-
         console.log(cart);
-
-        console.log(cart[4]);
 
     }catch(error){
         console.log(error);
@@ -180,18 +160,14 @@ button5.addEventListener('click', async() => {
         const json_data = await raw_response.json();
 
         console.log(json_data)
-
-        localStorage.setItem('productStorage', JSON.stringify(json_data));
             
-        let products = localStorage.getItem('productStorage');    
+        let products = cart.push(json_data[5].productName + " " + json_data[5].price);
+
+        products.setItem('cartInventory');
 
         console.log(products);
 
-        cart.push(json_data[5].productName + " " + json_data[5].price);
-
         console.log(cart);
-
-        console.log(cart[5]);
 
     }catch(error){
         console.log(error);
@@ -213,18 +189,14 @@ button6.addEventListener('click', async() => {
         const json_data = await raw_response.json();
 
         console.log(json_data)
-
-        localStorage.setItem('productStorage', JSON.stringify(json_data));
             
-        let products = localStorage.getItem('productStorage');    
+        let products = cart.push(json_data[6].productName + " " + json_data[6].price);
+
+        products.setItem('cartInventory');
 
         console.log(products);
 
-        cart.push(json_data[6].productName + " " + json_data[6].price);
-
         console.log(cart);
-
-        console.log(cart[6]);
 
     }catch(error){
         console.log(error);
@@ -246,18 +218,14 @@ button7.addEventListener('click', async() => {
         const json_data = await raw_response.json();
 
         console.log(json_data)
-
-        localStorage.setItem('productStorage', JSON.stringify(json_data));
             
-        let products = localStorage.getItem('productStorage');    
+        let products = cart.push(json_data[7].productName + " " + json_data[7].price);
 
+        products.setItem('cartInventory');
+        
         console.log(products);
 
-        cart.push(json_data[7].productName + " " + json_data[7].price);
-
         console.log(cart);
-
-        console.log(cart[7]);
 
     }catch(error){
         console.log(error);
