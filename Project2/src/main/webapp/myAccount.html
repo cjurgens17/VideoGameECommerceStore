@@ -1,53 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< Updated upstream
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>G3 - Project 2</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    
-    <body>
-    
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="./index.html">G3</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="./register.html">Register</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="./login.html">Login</a></li>
-                                <li><a class="dropdown-item" href="./myAccount.html">My Account</a></li>
-                                <li><a class="dropdown-item" href="./logout.html">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" event="NEEDS JS SCRIPT TO REFERENCE GOING TO CART.HTML">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
-                </div>
-=======
 
 <head>
     <meta charset="utf-8" />
@@ -83,22 +35,23 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Login</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="./login.html">Register/Login</a></li>
+                            <li><a class="dropdown-item" href="./register.html">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
+                            <li><a class="dropdown-item" href="./login.html">Login</a></li>
                             <li><a class="dropdown-item" href="./myAccount.html">My Account</a></li>
                             <li><a class="dropdown-item" href="./logout.html">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex" event="NEEDS JS SCRIPT TO REFERENCE GOING TO CART.HTML">
-                    <button class="btn btn-outline-dark" type="submit">
-                        <i class="bi-cart-fill me-1"></i>
-                        Cart
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                    </button>
-                </form>
+
+                <button class="btn btn-outline-dark" type="submit" onclick='goToCart()'>
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </button>
+
             </div>
         </div>
     </nav>
@@ -107,18 +60,17 @@
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Account Information</h1>
+                <h1 class="display-4 fw-bolder">Account Details</h1>
                 <p class="lead fw-normal text-white-50 mb-0"></p>
->>>>>>> Stashed changes
             </div>
         </div>
     </header>
 
     <!-- Body Section-->
-    <div class="card-body col-sm-8" float='align-items-right'>
-        <form>
-            <div class="form-floating mb-3">
-                <div class="text-center">
+    <div class="card-holder">
+        <div class="card-body col-10 text-center">
+            <div>
+                <div>
                     <label>
                         <h3>Account Details</h3>
                         Display:
@@ -129,43 +81,23 @@
                     </label>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <div class="form-floating mb-3">
-                <div class="text-center">
-                    <label>
-                        <h3>Order Details</h3>
-                        Display:
-                        <br>
-                        -No Previous Order History
-                        <br>
-                        -Associated Order Numbers
-                    </label>
-                </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="card-body col-10 text-center">
+            <div>
+                <label>
+                    <h3>Order Details</h3>
+                    Display:
+                    <br>
+                    -No Previous Order History
+                    <br>
+                    -Associated Order Numbers
+                </label>
             </div>
-<<<<<<< Updated upstream
-        </section>
-        
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">&copy; G3 P2 2022</p></div>
-        </footer>
-        
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-
-        <!-- Required JS -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/shopify-cartjs/1.1.0/cart.min.js"></script>
-    </body>
-</html>
-=======
-        </form>
+        </div>
     </div>
-
 
 
     <!-- Footer-->
@@ -181,10 +113,6 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
-    <!-- Required JS -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/shopify-cartjs/1.1.0/cart.min.js"></script>
 </body>
 
 </html>
->>>>>>> Stashed changes
