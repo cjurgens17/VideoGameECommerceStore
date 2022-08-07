@@ -16,7 +16,3 @@ checkButton.addEventListener("click", async() => {
     
       console.log(content);
     });
-
-    
-
-      
