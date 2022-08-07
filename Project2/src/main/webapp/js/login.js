@@ -5,28 +5,28 @@ let loginButton = document.getElementById("login-button");
 //console.log(signUpButton);
 
 
-loginButton.addEventListener('click', async() => {
+// loginButton.addEventListener('click', async() => {
 
-    // var inputValue = document.getElementById("field").value;
+//     // var inputValue = document.getElementById("field").value;
 
-    try {
+//     try {
 
 
 
-        const raw_response = await fetch(`http://localhost:8080/app/users`);
+//         const raw_response = await fetch(`http://localhost:8080/app/username`);
 
-        if(!raw_response.ok){
-            throw new Error(raw_response.status)
-        }
+//         if(!raw_response.ok){
+//             throw new Error(raw_response.status)
+//         }
 
-        const json_data = await raw_response.json();
+//         const json_data = await raw_response.json();
 
-        console.log(json_data)
+//         console.log(json_data)
 
-         localStorage.setItem('currentUser', JSON.stringify(json_data));
+//          localStorage.setItem('currentUser', JSON.stringify(json_data));
         
 
-        window.location.replace("shop.html");
+//         window.location.replace("shop.html");
 
         
        
@@ -45,41 +45,41 @@ loginButton.addEventListener('click', async() => {
 
 
 
-    }catch(error){
-        console.log(error);
-    }
+//     }catch(error){
+//         console.log(error);
+//     }
 
 
-})
+// })
 
 
 
 
-// loginButton.addEventListener("click", async() => {
+loginButton.addEventListener("click", async() => {
 
-//     try{
+    try{
 
-//     const rawResponse = await fetch('http://localhost:8080/app/username', {
+    const rawResponse = await fetch('http://localhost:8080/app/username', {
 
-//         method: 'POST',
+        method: 'POST',
 
-//         headers: {
-//           'Accept': 'application/json',
-//           'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify({username: "Buddy123"})
-//       });
-//       const content = await rawResponse.json()
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({username: document.getElementById("username-sign-in").value})
+      });
+      const content = await rawResponse.json()
     
-//       console.log(content);
+      console.log(content);
 
       
 
-//         localStorage.setItem('currentUser', JSON.stringify(content));
+        localStorage.setItem('currentUser', JSON.stringify(content));
 
-//     }catch(error){
-//         console.log(error)
-//     }
+    }catch(error){
+        console.log(error)
+    }
 
-//         // window.location.replace("shop.html");
-//     });
+        // window.location.replace("shop.html");
+    });
