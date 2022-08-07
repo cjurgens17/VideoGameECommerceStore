@@ -96,6 +96,19 @@ img{
   object-fit: cover;
 }
 
+
+.social-icon{
+    
+    color: rgb(11, 21, 160);
+    transition: color 0.2s;
+    text-decoration: none;
+    margin: 0px 465px;
+}
+.social-icon:hover{
+    color: rgb(47, 24, 179)
+}
+
+
 hr {
   margin: 1rem 0;
   color: inherit;
