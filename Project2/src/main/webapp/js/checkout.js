@@ -15,6 +15,7 @@ checkButton.addEventListener("click", async() => {
       const content = await rawResponse.json();
     
       console.log(content);
+
       // ${cart[0].productName}
 
       // productName
@@ -26,3 +27,5 @@ checkButton.addEventListener("click", async() => {
 
 
       
+
+
