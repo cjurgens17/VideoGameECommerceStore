@@ -42,7 +42,7 @@ public class UserController {
 
     }
 
-    @DeleteMapping("user")
+    @DeleteMapping("/user")
     public ClientMessage deleteUser(@RequestBody User user){
         return userService.deleteUser(user) ? DELETION_SUCCESSFUL : DELETION_FAILED;
     }
