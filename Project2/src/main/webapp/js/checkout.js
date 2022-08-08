@@ -10,9 +10,22 @@ checkButton.addEventListener("click", async() => {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({items: 'PlayStation', itemNum: 1})
+        body: JSON.stringify({productName: "spicyNuggets" , price:5 })
       });
       const content = await rawResponse.json();
     
       console.log(content);
+
+      // ${cart[0].productName}
+
+      // productName
+      // price
     });
+
+    
+
+
+
+      
+
+
