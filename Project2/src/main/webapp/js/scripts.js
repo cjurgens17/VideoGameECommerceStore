@@ -6,6 +6,8 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
+// Function by Li Villaranda
+
 // User LogOut Function
 function logOut() {
     localStorage.removeItem('currentUser');
@@ -25,7 +27,7 @@ function goToCart() {
 
 // Display Order
 function displayOrder() {
-    let order = localStorage.getItem('cartInventory');
+    localStorage.getItem(cartInventory);
 
     let items = document.getElementById('items');
 
@@ -33,4 +35,16 @@ function displayOrder() {
         item.append(item[i]);
         item.append(document.createElement("tr"));
     }
+}
+
+// Display Account Information
+function displayAccount() {
+    localStorage.getItem('currentUser');
+
+    let user = localStorage.getItem('currentUser');
+
+    let info = document.getElementById('user-info');
+    info.append(`Name: ${user.firstname} ${user.lastname}`);
+    info.append(document.createElement("br"));
+    info.append(`Username: ${user.username}`);
 }

@@ -1,4 +1,8 @@
 var cart = [];
+let userStorage = localStorage.getItem('currentUser')
+let currentUser = JSON.parse(userStorage)
+console.log(currentUser)
+let cartInventory = localStorage.setItem('productStorage')
 
 let button0 = document.getElementById("button0");
 
@@ -18,9 +22,9 @@ button0.addEventListener('click', async() => {
 
         let products = cart.push(json_data[0].productName + " " + json_data[0].price);
 
-        products.setItem('cartInventory');
-
-        console.log(products);
+        cartInventory.setItem(products)
+        
+        console.log(cartInventory);
 
         console.log(cart);
 
