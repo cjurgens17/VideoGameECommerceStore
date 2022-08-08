@@ -14,11 +14,12 @@ import static com.revature.Project2.utils.ClientMessageUtils.*;
 
 @CrossOrigin
 @RestController
-@RequestMapping("app")
+@RequestMapping("/app")
 public class UserController {
 
    @Autowired
     private UserService userService;
+
     @PostMapping(value = "login", consumes = MediaType.APPLICATION_JSON_VALUE)
     public User getByUsername(@RequestParam(name="username-sign-in", defaultValue = "Buddy123") String username){
         System.out.println("This is the username" + username);
@@ -26,24 +27,24 @@ public class UserController {
 
     }
 
-    @GetMapping("users")
+    @GetMapping("/users")
     public List<User> getAll(){
         return userService.getAllUsers();
     }
 
-    @PostMapping("user")
+    @PostMapping("/user")
     @ResponseStatus(HttpStatus.OK)
     public ClientMessage createUser(@RequestBody User user){
         return userService.createUser(user) ? CREATION_SUCCESSFUL : CREATION_FAILED;
     }
 
-    @PutMapping("user")
+    @PutMapping("/user")
     public ClientMessage updateUser(@RequestBody User user){
         return userService.updateUser(user) >0? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 
     }
 
-    @DeleteMapping("user")
+    @DeleteMapping("/user")
     public ClientMessage deleteUser(@RequestBody User user){
         return userService.deleteUser(user) ? DELETION_SUCCESSFUL : DELETION_FAILED;
     }

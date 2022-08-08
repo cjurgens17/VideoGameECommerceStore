@@ -48,8 +48,9 @@ public class CartServiceImpl implements CartService {
 
     }
 
+
     @Override
-    public List<Cart> getAllCarts() {
+    public List<Cart> getAllCart() {
         return cartRepo.findAll();
     }
 
