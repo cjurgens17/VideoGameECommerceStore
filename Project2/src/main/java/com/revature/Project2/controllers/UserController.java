@@ -20,9 +20,11 @@ public class UserController {
    @Autowired
     private UserService userService;
 
-    @GetMapping("user")
-    public User getById(@RequestParam int id){
-        return userService.getUserById(id);
+    @PostMapping(value = "login", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public User getByUsername(@RequestParam(name="username-sign-in", defaultValue = "Buddy123") String username){
+        System.out.println("This is the username" + username);
+        return userService.getUserByUsername(username);
+
     }
 
     @GetMapping("/users")

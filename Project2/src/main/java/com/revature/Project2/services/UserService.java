@@ -9,8 +9,12 @@ public interface UserService {
     boolean createUser(User user);
 
 
-    User getUserById(int id);
+    User getUserByUsername(String username);
 
+
+//    User getUserById(int id);
+
+//    User getUserById(String username);
 
     List<User> getAllUsers();
 
