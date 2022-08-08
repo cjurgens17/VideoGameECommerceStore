@@ -3,10 +3,7 @@ package com.revature.Project2.aspects;
 import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 @Aspect
@@ -25,9 +22,17 @@ public class LoggingAspect {
         log.info("After advice for: " + joinPoint.getTarget().getClass() + ": " + joinPoint.getSignature().getName());
     }
 
+    @AfterThrowing(value = "execution(* com.revature.Project2.services.*.*(..))")
+    public void logError(JoinPoint joinPoint){
+        log.error("Error when executing method: "+joinPoint.getTarget().getClass()+": "+ joinPoint.getSignature().getName());
+    }
+
     @Around(value = "execution(* com.revature.services.*.*(..))")
     public Object logDuring(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         log.info("Around advice for: " + proceedingJoinPoint.getTarget().getClass() + ": " + proceedingJoinPoint.getSignature().getName());
+
+
+
 
 
 

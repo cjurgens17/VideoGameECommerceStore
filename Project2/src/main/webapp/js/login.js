@@ -2,7 +2,7 @@ let loginButton = document.getElementById("login-button");
 
 // let signUpButton = document.getElementById("signUpButton");
 // console.log(loginButton);
-//console.log(signUpButton);
+// console.log(signUpButton);
 
 
 // loginButton.addEventListener('click', async() => {
@@ -13,7 +13,7 @@ let loginButton = document.getElementById("login-button");
 
 
 
-//         const raw_response = await fetch(`http://localhost:8080/app/username`);
+//         const raw_response = await fetch(`http://localhost:8080/app/login`);
 
 //         if(!raw_response.ok){
 //             throw new Error(raw_response.status)
@@ -26,7 +26,7 @@ let loginButton = document.getElementById("login-button");
 //          localStorage.setItem('currentUser', JSON.stringify(json_data));
         
 
-//         window.location.replace("shop.html");
+//         // window.location.replace("shop.html");
 
         
        
@@ -57,29 +57,29 @@ let loginButton = document.getElementById("login-button");
 
 loginButton.addEventListener("click", async() => {
 
-    try{
+  try{
 
-    const rawResponse = await fetch('http://localhost:8080/app/username', {
+  const rawResponse = await fetch('http://localhost:8080/app/login', {
 
-        method: 'POST',
+      method: 'POST',
 
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({username: document.getElementById("username-sign-in").value})
-      });
-      const content = await rawResponse.json()
-    
-      console.log(content);
-
-      
-
-        localStorage.setItem('currentUser', JSON.stringify(content));
-
-    }catch(error){
-        console.log(error)
-    }
-
-        // window.location.replace("shop.html");
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({username: document.getElementById("username-sign-in").value})
     });
+    const content = await rawResponse.json();
+    console.log(rawResponse)
+  
+    console.log(content);
+
+    localStorage.setItem('currentUser', JSON.stringify(content))
+
+    window.location.replace("shop.html")
+
+  }catch(error){
+
+    console.log(error)
+  }
+  });
