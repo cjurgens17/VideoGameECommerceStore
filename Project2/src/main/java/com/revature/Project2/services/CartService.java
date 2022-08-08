@@ -13,7 +13,7 @@ public interface CartService {
     Cart getCartById(int id);
 
 
-    List<Cart> getAllCarts();
+    List<Cart> getAllCart();
 
 
     Integer updateCart(Cart cart);
