@@ -62,4 +62,10 @@ public class UserServiceImpl implements UserService {
         userRepo.delete(user);
         return true;
     }
+
+    @Override
+    public User getUserByUsernamePassword(String username, String password) {
+        System.out.println("Look Here: " + username + " with a password of:" + password);
+        return userRepo.findByUsernamePassword(username, password);
+    }
 }

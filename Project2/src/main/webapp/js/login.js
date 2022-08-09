@@ -5,7 +5,11 @@ let loginButton = document.getElementById("login-button");
 loginButton.addEventListener("click", async() => {
 
   let username = document.getElementById("username-sign-in").value;
+  let password = document.getElementById("password-sign-in").value;
   
+  let user = {
+   username, password
+  }
 
   try{
 
@@ -17,9 +21,7 @@ loginButton.addEventListener("click", async() => {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-
-      body: username
-
+    body: JSON.parse(user)
     });
     const content = await rawResponse.json();
     console.log(rawResponse)
