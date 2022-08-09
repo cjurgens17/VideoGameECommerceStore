@@ -18,7 +18,13 @@ loginButton.addEventListener("click", async() => {
         'Content-Type': 'application/json'
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       body: username
+=======
+
+      body: username
+
+>>>>>>> 75390e01887831b23e35951f72bd22dab039416b
 =======
 
       body: username
