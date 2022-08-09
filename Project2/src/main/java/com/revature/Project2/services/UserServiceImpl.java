@@ -28,8 +28,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUserByUsername(String username) {
-        System.out.println("Look Here: " + username);
-        return userRepo.findByUsername(username);
+        return null;
+    }
+
+    @Override
+    public User getUserByUsernamePassword(String username, String password) {
+        System.out.println("Look Here: " + username + " with password: " + password);
+        return userRepo.findByUsername(username,password);
     }
 
 //    @Override
