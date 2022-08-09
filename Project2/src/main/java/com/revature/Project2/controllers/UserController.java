@@ -20,29 +20,19 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping(value = "login", consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public User getByUsernamePass(@RequestBody String username, String password){
-        System.out.println("This is the username" + username);
-        return userService.getUserByUsernamePass(username);
+
 
 
 
     @PostMapping(value = "login", consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public User getByUsername(@RequestBody User user){
+    public User getByUsername(@RequestBody User user) {
         System.out.println(user);
         String username = user.getUsername();
-        String password= user.getPassword();
+        String password = user.getPassword();
         System.out.println("This is the username" + username + "password: " + user.getPassword());
         return userService.getUserByUsername(username, password);
 
-
-    @PostMapping(value = "/login", consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public User getUserByUsername(@RequestBody String username)
-            {
-                    System.out.println("This is the username" + username + " with this password:" + password);
-                    return userService.getUserByUsernamePassword(username,password);
-
-            }
+    }
 
 
 
