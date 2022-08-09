@@ -54,17 +54,20 @@ async function loginUser(event){
 
       if(!raw_response.ok){
           throw new Error(raw_response.status)
-      }
-
-      const json_data = await raw_response.json();
+      
 
       
 
       localStorage.setItem('productStorage', JSON.stringify(json_data));
           
       
+    });
+    const content = await rawResponse.json();
+    console.log(rawResponse)
+  
+    console.log(content);
 
-
+    localStorage.setItem('currentUser', JSON.parse(content))
 
 
     }catch(error){
