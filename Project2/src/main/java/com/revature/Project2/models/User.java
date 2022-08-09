@@ -7,6 +7,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "userz")
 @Data
+
 public class User {
 
     @Id
@@ -35,7 +36,9 @@ public class User {
         super();
     }
 
-    public User(int id, String firstName, String lastName, String username, String password, Cart cart) {
+
+    public User(int id, String firstName, String lastName, String username, Cart cart, String password) {
+
         super();
         this.id = id;
         this.firstName = firstName;
@@ -43,14 +46,28 @@ public class User {
         this.username = username;
         this.password = password;
         this.cart = cart;
+        this.password = password;
     }
 
-    public User(String firstName, String lastName, String username, String password, Cart cart) {
+
+    public User(String firstName, String lastName, String username, Cart cart, String password) {
+
         super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
         this.password = password;
         this.cart = cart;
+        this.password = password;
     }
+
+    public User(String username, String password) {
+        super();
+        this.username = username;
+        this.password = password;
+    }
+
+
+
+
 }

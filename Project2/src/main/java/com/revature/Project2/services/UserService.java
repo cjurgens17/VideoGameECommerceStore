@@ -9,7 +9,7 @@ public interface UserService {
     boolean createUser(User user);
 
 
-    User getUserByUsername(String username);
+    User getUserByUsername(String username, String password);
 
 
 //    User getUserById(int id);
