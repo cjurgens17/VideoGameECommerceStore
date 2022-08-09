@@ -67,39 +67,24 @@
     </header>
 
     <!-- Section-->
-    <div>
-        <div class="text-center" style="align-self: center">
-            <div class="card-header">
-
-
-            
-               
-
-                       
-               
-
-                
-
-                <h4> If you already have an account, Sign In!</h4>
-
-      
-
-
-                <form id="formID">
-
+    <table align="center" width="30%">
+        <tr>
+            <td> 
+                <form>
+                   <h3 align="center">If you already have an account,
+                    <br>
+                    Sign In!</h3>
+                    <br>
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="username-sign-in"/>
+                        <input class="form-control" id="username-sign-in" name="username-sign-in" />
                         <label>Username</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="passwordsignin" type="password" autocomplete="off" />
-                        <label for="passwordSignIn">Password</label>
+                        <input class="form-control" name="password-sign-in" id="password-sign-in" type="password" />
+                        <label>Password</label>
                     </div>
-
-                    <a class="btn btn-outline-dark" onclick="loginUser(event); getProducts(event);">Login</a>
-
                 </form>
-                    <center><a class="btn btn-outline-dark" id="login-button">Login</a></center>
+                    <center><a class="btn btn-outline-dark" onclick="loginUser(event); getProducts(event);">Login</a></center>
             </td>
         </tr>
         <br>
