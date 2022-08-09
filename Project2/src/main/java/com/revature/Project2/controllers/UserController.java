@@ -19,10 +19,10 @@ public class UserController {
 
    @Autowired
     private UserService userService;
-    @PostMapping(value = "login", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public User getByUsername(@RequestParam(name="username-sign-in", defaultValue = "Buddy123") String username){
+    @PostMapping(value = "login", consumes = {MediaType.APPLICATION_JSON_VALUE})
+    public User getByUsernamePass(@RequestBody String username, String password){
         System.out.println("This is the username" + username);
-        return userService.getUserByUsername(username);
+        return userService.getUserByUsernamePass(username);
 
     }
 

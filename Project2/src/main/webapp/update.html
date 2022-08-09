@@ -60,22 +60,43 @@
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Log Out</h1>
+                <h1 class="display-4 fw-bolder">Update Account Information</h1>
                 <p class="lead fw-normal text-white-50 mb-0"></p>
             </div>
         </div>
     </header>
 
     <!-- Body Section-->
-    <div class="text-center" float="center">
-        <br>
-        <br>
-        <br>
-        <div>
-            <!-- class="align-items-center justify-content-between mt-4 mb-0" -->
-            <a class="btn btn-outline-dark" onclick="logOut();">Log Out</a>
+    <section class='card-holder'>
+        <div class="text-center">
+            <div class="card-header">
+                <form id="formID">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="fnUpdate" name="fnUpdate" />
+                        <label>First Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="lnUpdate" name="lnUpdate" />
+                        <label>Last Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="unUpdate" name="unUpdate" />
+                        <label>Username</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="pwUpdate" name="pwUpdate" type="password" />
+                        <label>Password</label>
+                    </div>
+                    <!-- <div class="form-floating mb-3">
+                        <input class="form-control" id="addUpdate" name="addUpdate"  />
+                        <label>Address</label>
+                    </div> -->
+
+                    <a class="btn btn-outline-dark" id="updateInfo">Update</a>
+                </form>
+            </div>
         </div>
-    </div>
+    </section>
 
 
     <br>
