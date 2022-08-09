@@ -1,6 +1,8 @@
 
+
 async function loginUser(event){
   event.preventDefault();
+
 
 
   try{
@@ -14,8 +16,12 @@ async function loginUser(event){
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
+
+
+
       body: JSON.stringify({username: document.getElementById('username-sign-in').value,
       password: document.getElementById('passwordsignin').value})
+
     });
     console.log(JSON.stringify({username: document.getElementById('username-sign-in').value},
     {password: document.getElementById('passwordsignin').value}))
@@ -26,7 +32,7 @@ async function loginUser(event){
   
     console.log(content);
 
-    localStorage.setItem('currentUser', JSON.stringify(content))
+    localStorage.setItem('currentUser', JSON.parse(content))
 
     window.location.replace("shop.html")
 

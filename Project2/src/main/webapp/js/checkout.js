@@ -44,6 +44,9 @@ checkButton.addEventListener("click", async() => {
       const content = await rawResponse.json();
     
       console.log(content);
+
+
+
       
 
 
@@ -61,6 +64,11 @@ checkButton.addEventListener("click", async() => {
 
 
 
+      
+
+
+
+
 
 
     
@@ -68,6 +76,7 @@ checkButton.addEventListener("click", async() => {
 
 
       
+
 
 
 

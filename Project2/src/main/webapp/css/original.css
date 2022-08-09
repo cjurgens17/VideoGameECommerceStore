@@ -89,11 +89,12 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-img{
-  float: inline-start;
-  width:  200px;
-  height: 200px;
-  object-fit: cover;
+div {
+  justify-content: center;
+}
+
+form {
+  align-self: center;
 }
 
 hr {
@@ -4551,6 +4552,7 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
+  align-self: center;
 }
 
 .card-title {
@@ -11293,5 +11295,3 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-
-

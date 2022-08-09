@@ -885,6 +885,7 @@
 2022-08-07 21:51:05 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.ProductsServiceImpl: getAllProducts
 2022-08-07 21:51:05 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.ProductsServiceImpl: getAllProducts
 2022-08-07 21:51:05 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.ProductsController: getAll
+
 2022-08-07 22:08:31 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.ProductsController: getAll
 2022-08-07 22:08:31 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.ProductsServiceImpl: getAllProducts
 2022-08-07 22:08:32 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.ProductsServiceImpl: getAllProducts
@@ -1301,3 +1302,4 @@
 2022-08-09 14:12:44 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.ProductsServiceImpl: getAllProducts
 2022-08-09 14:12:44 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.ProductsController: getAll
 2022-08-09 14:12:44 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: getByUsername
+

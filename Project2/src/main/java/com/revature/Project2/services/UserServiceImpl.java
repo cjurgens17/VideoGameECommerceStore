@@ -26,6 +26,11 @@ public class UserServiceImpl implements UserService {
         return (primaryKey > 0) ? true: false;
     }
 
+//    @Override
+//    public User getUserByUsername(String username) {
+//        return null;
+//    }
+
     @Override
     public User getUserByUsername(String username, String password) {
         System.out.println("Look Here: " + username);

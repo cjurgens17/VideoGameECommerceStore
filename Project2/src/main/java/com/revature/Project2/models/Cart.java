@@ -23,8 +23,11 @@ public class Cart {
     @Column(name = "itemnum")
     private int itemNum;
 
+
+
     @Column(name = "total")
     private int total;
+
 
 
 

@@ -14,11 +14,13 @@ import static com.revature.Project2.utils.ClientMessageUtils.*;
 
 @CrossOrigin
 @RestController
-@RequestMapping("app")
+@RequestMapping("/app")
 public class UserController {
 
-   @Autowired
+    @Autowired
     private UserService userService;
+
+
     @PostMapping(value = "login", consumes = {MediaType.APPLICATION_JSON_VALUE})
     public User getByUsername(@RequestBody User user){
         System.out.println(user);
@@ -27,29 +29,40 @@ public class UserController {
         System.out.println("This is the username" + username + "password: " + user.getPassword());
         return userService.getUserByUsername(username, password);
 
-    }
+
+    @PostMapping(value = "/login", consumes = {MediaType.APPLICATION_JSON_VALUE})
+    public User getUserByUsername(@RequestBody String username)
+            {
+                 System.out.println("This is the username" + username );
+                 return userService.getUserByUsername(username);
+
+
+            }
+
+
 
 
 
 
     @GetMapping("users")
+
     public List<User> getAll(){
         return userService.getAllUsers();
     }
 
-    @PostMapping("user")
+    @PostMapping("/user")
     @ResponseStatus(HttpStatus.OK)
     public ClientMessage createUser(@RequestBody User user){
         return userService.createUser(user) ? CREATION_SUCCESSFUL : CREATION_FAILED;
     }
 
-    @PutMapping("user")
+    @PutMapping("/user")
     public ClientMessage updateUser(@RequestBody User user){
         return userService.updateUser(user) >0? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 
     }
 
-    @DeleteMapping("user")
+    @DeleteMapping("/user")
     public ClientMessage deleteUser(@RequestBody User user){
         return userService.deleteUser(user) ? DELETION_SUCCESSFUL : DELETION_FAILED;
     }
