@@ -35,6 +35,13 @@ public class CartController {
         return cartService.getAllCart();
     }
 
+//<<<<<<< HEAD
+//    @PostMapping("/cart")
+//    @ResponseStatus(HttpStatus.I_AM_A_TEAPOT)
+//=======
+//    @PostMapping("cart")
+//    @ResponseStatus(HttpStatus.ACCEPTED)
+//>>>>>>> ba8834b90579e7d4667c04f3078554147988dbd4
 
 //    @PostMapping("/cart")
 //    @ResponseStatus(HttpStatus.I_AM_A_TEAPOT)
