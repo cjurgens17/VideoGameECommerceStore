@@ -1,4 +1,9 @@
-var cart = [];
+var cart = {
+    num: [],
+    name: []
+  }
+
+
 let userStorage = localStorage.getItem('currentUser')
 let currentUser = JSON.parse(userStorage)
 console.log(currentUser)
@@ -25,11 +30,21 @@ button0.addEventListener('click', async() => {
 
         console.log(products);
 
-        cart.push(json_data[0].productName + " " + json_data[0].price);
+        cart.num.push(json_data[0].price);
+        cart.name.push(json_data[0].productName);
 
-        console.log(cart);
+        console.log('This is the Cart: ')
+        console.log(cart)
 
-        console.log(cart[0]);
+        localStorage.setItem('cartStorage', JSON.stringify(cart));
+
+        
+
+        console.log('this is the tempCart')
+        console.log(localStorage.getItem('cartStorage'));
+        
+
+        
 
     }catch(error){
         console.log(error);
@@ -58,11 +73,19 @@ button1.addEventListener('click', async() => {
 
         console.log(products);
 
-        cart.push(json_data[1].productName + " " + json_data[1].price);
+        cart.num.push(json_data[1].price);
+        cart.name.push(json_data[1].productName);
 
-        console.log(cart);
+        console.log('This is the Cart: ')
+        console.log(cart)
 
-        console.log(cart[1]);
+        localStorage.setItem('cartStorage', JSON.stringify(cart));
+
+        
+
+        console.log('this is the tempCart')
+        console.log(localStorage.getItem('cartStorage'));
+        
 
     }catch(error){
         console.log(error);
@@ -91,12 +114,19 @@ button2.addEventListener('click', async() => {
 
         console.log(products);
 
-        cart.push(json_data[2].productName + " " + json_data[2].price);
+        cart.num.push(json_data[2].price);
+        cart.name.push(json_data[2].productName);
 
-        console.log(cart);
+        console.log('This is the Cart: ')
+        console.log(cart)
 
-        console.log(cart[2]);
+        localStorage.setItem('cartStorage', JSON.stringify(cart));
 
+        
+
+        console.log('this is the tempCart')
+        console.log(localStorage.getItem('cartStorage'));
+        
     }catch(error){
         console.log(error);
     }
@@ -124,11 +154,19 @@ button3.addEventListener('click', async() => {
 
         console.log(products);
 
-        cart.push(json_data[3].productName + " " + json_data[3].price);
+        cart.num.push(json_data[3].price);
+        cart.name.push(json_data[3].productName);
 
-        console.log(cart);
+        console.log('This is the Cart: ')
+        console.log(cart)
 
-        console.log(cart[3]);
+        localStorage.setItem('cartStorage', JSON.stringify(cart));
+
+        
+
+        console.log('this is the tempCart')
+        console.log(localStorage.getItem('cartStorage'));
+        
 
     }catch(error){
         console.log(error);
@@ -157,12 +195,19 @@ button4.addEventListener('click', async() => {
 
         console.log(products);
 
-        cart.push(json_data[4].productName + " " + json_data[4].price);
+        cart.num.push(json_data[4].price);
+        cart.name.push(json_data[4].productName);
 
-        console.log(cart);
+        console.log('This is the Cart: ')
+        console.log(cart)
 
-        console.log(cart[4]);
+        localStorage.setItem('cartStorage', JSON.stringify(cart));
 
+        
+
+        console.log('this is the tempCart')
+        console.log(localStorage.getItem('cartStorage'));
+        
     }catch(error){
         console.log(error);
     }
@@ -190,11 +235,19 @@ button5.addEventListener('click', async() => {
 
         console.log(products);
 
-        cart.push(json_data[5].productName + " " + json_data[5].price);
+        cart.num.push(json_data[5].price);
+        cart.name.push(json_data[5].productName);
 
-        console.log(cart);
+        console.log('This is the Cart: ')
+        console.log(cart)
 
-        console.log(cart[5]);
+        localStorage.setItem('cartStorage', JSON.stringify(cart));
+
+        
+
+        console.log('this is the tempCart')
+        console.log(localStorage.getItem('cartStorage'));
+        
 
     }catch(error){
         console.log(error);
@@ -223,11 +276,19 @@ button6.addEventListener('click', async() => {
 
         console.log(products);
 
-        cart.push(json_data[6].productName + " " + json_data[6].price);
+        cart.num.push(json_data[6].price);
+        cart.name.push(json_data[6].productName);
 
-        console.log(cart);
+        console.log('This is the Cart: ')
+        console.log(cart)
 
-        console.log(cart[6]);
+        localStorage.setItem('cartStorage', JSON.stringify(cart));
+
+        
+
+        console.log('this is the tempCart')
+        console.log(localStorage.getItem('cartStorage'));
+        
 
     }catch(error){
         console.log(error);
@@ -256,12 +317,19 @@ button7.addEventListener('click', async() => {
 
         console.log(products);
 
-        cart.push(json_data[7].productName + " " + json_data[7].price);
+        cart.num.push(json_data[7].price);
+        cart.name.push(json_data[7].productName);
 
-        console.log(cart);
+        console.log('This is the Cart: ')
+        console.log(cart)
 
-        console.log(cart[7]);
+        localStorage.setItem('cartStorage', JSON.stringify(cart));
 
+        
+
+        console.log('this is the tempCart')
+        console.log(localStorage.getItem('cartStorage'));
+        
     }catch(error){
         console.log(error);
     }
