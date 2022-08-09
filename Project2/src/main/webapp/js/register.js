@@ -15,6 +15,10 @@ registerButton.addEventListener("click", async() => {
         username: document.getElementById("username-input").value,
         password: document.getElementById("password-input").value})
       });
+      console.log(JSON.stringify({firstName: document.getElementById("first-name-input").value,
+      lastName: document.getElementById("last-name-input").value,
+      username: document.getElementById("username-input").value,
+      password: document.getElementById("password-input").value}))
       const content = await rawResponse.json();
     
       console.log(content);
