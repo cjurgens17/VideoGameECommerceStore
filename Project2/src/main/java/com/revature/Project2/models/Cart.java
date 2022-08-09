@@ -23,6 +23,8 @@ public class Cart {
     @Column(name = "itemnum")
     private int itemNum;
 
+    @Column( name= "item_price", nullable = false)
+    double price;
 //    @Transient
 //    List<Products> productsList = new ArrayList<>();
 
