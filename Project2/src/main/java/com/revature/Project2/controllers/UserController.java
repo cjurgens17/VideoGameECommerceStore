@@ -21,13 +21,14 @@ public class UserController {
     private UserService userService;
 
     @PostMapping(value = "/login", consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public User getUserByUsername(@RequestBody String username)
+    public User getUserByUsernamePassword(@RequestBody String username, String password)
             {
-                 System.out.println("This is the username" + username );
-                 return userService.getUserByUsername(username);
-
+                    System.out.println("This is the username" + username + " with this password:" + password);
+                    return userService.getUserByUsernamePassword(username,password);
 
             }
+
+
 
 
 
