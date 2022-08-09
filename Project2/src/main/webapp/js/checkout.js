@@ -3,6 +3,7 @@ let tempCart = localStorage.getItem('cartStorage')
 let currentcart = JSON.parse(tempCart)
 
 console.log(currentcart)
+console.log(tempCart)
 
 let pName = "";
 let stringPrice = 0;
@@ -13,15 +14,23 @@ let productNum = currentcart.itemNum;
 
 for(let i = 0; i < currentcart.name.length; i++) {
   
-  pName += `${currentcart.name[i]} `
+  var b = document.createElement('br');
+  pName += `${currentcart.name[i]} `;
+
 }
-  
+
+
+function cartTotal(){
 for(let j = 0; j < currentcart.num.length; j++) {
     
   stringPrice += currentcart.num[j] + stringPrice;
+
+  var total = document.getElementById("total");
+  total.innerHTML = `Total: $ ${stringPrice}`;
+  
     
 }
-
+}
 
 console.log(pName)
 console.log(stringPrice)

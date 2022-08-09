@@ -74,46 +74,34 @@
                 <div class="text-center">
                     <p><h3>Current Order:</h3></p>
                     <!-- Table -->
-                    <table align="center" WIDTH="25%">
-                       <thead><strong>
-                        <td id="product-name">Item</td>
-                        <td style="color: white;">AAAAA</td>
-                        <td id="price">Price</td>
-                       </thead></strong>
-                       <tr id="items">
-                        <td></td>
-                       </tr>
+                    <!-- Table -->
+                    <table class="cart" align="center" WIDTH="50%">
+                        <thead><strong>
+                                <td id="product-name">Item</td>
+                                <td id="price">Price</td>
+                                <td id="numofitems">Quantity</td>
+                                <td id="remove">Delete</td>
+                        </thead></strong>
+                        <tr id="items">
+                        </tr>
                     </table>
                     <br>
                     <br>
                     <br>
                     <div class="text-center" float="center">
                         <div>
-                            <!-- class="align-items-center justify-content-between mt-4 mb-0" -->
-                            <a class="btn btn-outline-dark" onclick="goToCart();">Check Out</a>
+                            <a class="btn btn-outline-dark"  id="total" onclick="cartTotal()">Total:  </a>
+                            <a class="btn btn-outline-dark"  id="checkoutBtn">Check Out</a>
                         </div>
                         <br>
                         <br>
                         <br>
                     </div>
-
-                <div>
-                    <label>
-                        <h3>Order</h3>
-                       <p id="items"></p>
-
-                       <p id="price"></p>
-
-                       <p id="numofitems"></p>
-
-
-                        <button id="checkoutBtn">Checkout Cart</button>
-                    </label>
-
                 </div>
             </div>
         </div>
-    </div>
+
+
 
 
 

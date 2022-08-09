@@ -13,7 +13,6 @@ let currentUser = JSON.parse(userStorage)
 console.log(currentUser)
 
 
-let cartInventory = localStorage.setItem('productStorage')
 
 
 let button0 = document.getElementById("button0");
