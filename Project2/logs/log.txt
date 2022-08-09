@@ -885,6 +885,7 @@
 2022-08-07 21:51:05 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.ProductsServiceImpl: getAllProducts
 2022-08-07 21:51:05 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.ProductsServiceImpl: getAllProducts
 2022-08-07 21:51:05 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.ProductsController: getAll
+<<<<<<< HEAD
 2022-08-08 17:46:54 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: getByUsername
 2022-08-08 17:46:54 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
 2022-08-08 17:46:54 INFO  LoggingAspect:17 - Before advice for: class com.sun.proxy.$Proxy134: findByUsername
@@ -967,3 +968,47 @@
 2022-08-08 19:03:41 ERROR LoggingAspect:27 - Error when executing method: class com.revature.Project2.services.UserServiceImpl: getUserByUsernamePassword
 2022-08-08 19:03:41 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsernamePassword
 2022-08-08 19:03:41 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: getUserByUsernamePassword
+=======
+2022-08-08 17:16:38 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: createUser
+2022-08-08 17:16:38 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: createUser
+2022-08-08 17:16:38 INFO  LoggingAspect:17 - Before advice for: class jdk.proxy4.$Proxy135: save
+2022-08-08 17:16:38 INFO  LoggingAspect:22 - After advice for: class jdk.proxy4.$Proxy135: save
+2022-08-08 17:16:38 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: createUser
+2022-08-08 17:16:38 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: createUser
+2022-08-08 17:27:49 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: getByUsername
+2022-08-08 17:27:49 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
+2022-08-08 17:27:49 INFO  LoggingAspect:17 - Before advice for: class jdk.proxy4.$Proxy135: findByUsername
+2022-08-08 17:27:49 INFO  LoggingAspect:22 - After advice for: class jdk.proxy4.$Proxy135: findByUsername
+2022-08-08 17:27:49 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
+2022-08-08 17:27:49 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: getByUsername
+2022-08-08 17:39:06 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: getByUsername
+2022-08-08 17:39:06 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
+2022-08-08 17:39:06 INFO  LoggingAspect:17 - Before advice for: class jdk.proxy4.$Proxy135: findByUsername
+2022-08-08 17:39:06 INFO  LoggingAspect:22 - After advice for: class jdk.proxy4.$Proxy135: findByUsername
+2022-08-08 17:39:06 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
+2022-08-08 17:39:06 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: getByUsername
+2022-08-08 18:12:42 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: createUser
+2022-08-08 18:12:43 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: createUser
+2022-08-08 18:12:43 INFO  LoggingAspect:17 - Before advice for: class jdk.proxy4.$Proxy135: save
+2022-08-08 18:12:43 INFO  LoggingAspect:22 - After advice for: class jdk.proxy4.$Proxy135: save
+2022-08-08 18:12:43 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: createUser
+2022-08-08 18:12:43 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: createUser
+2022-08-08 18:33:43 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: getByUsername
+2022-08-08 18:33:43 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
+2022-08-08 18:33:43 INFO  LoggingAspect:17 - Before advice for: class jdk.proxy4.$Proxy135: findByUsername
+2022-08-08 18:33:43 INFO  LoggingAspect:22 - After advice for: class jdk.proxy4.$Proxy135: findByUsername
+2022-08-08 18:33:43 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
+2022-08-08 18:33:43 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: getByUsername
+2022-08-08 20:13:15 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: getByUsername
+2022-08-08 20:13:16 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
+2022-08-08 20:13:16 INFO  LoggingAspect:17 - Before advice for: class jdk.proxy4.$Proxy135: findByUsername
+2022-08-08 20:13:16 INFO  LoggingAspect:22 - After advice for: class jdk.proxy4.$Proxy135: findByUsername
+2022-08-08 20:13:16 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
+2022-08-08 20:13:16 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: getByUsername
+2022-08-08 20:53:53 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: getByUsername
+2022-08-08 20:53:53 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
+2022-08-08 20:53:53 INFO  LoggingAspect:17 - Before advice for: class jdk.proxy4.$Proxy135: findByUsername
+2022-08-08 20:53:53 INFO  LoggingAspect:22 - After advice for: class jdk.proxy4.$Proxy135: findByUsername
+2022-08-08 20:53:53 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
+2022-08-08 20:53:53 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: getByUsername
+>>>>>>> 2a261e916f258641b2bdd4f2d786aeb00f20ca77
