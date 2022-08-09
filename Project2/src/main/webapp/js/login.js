@@ -1,61 +1,11 @@
 let loginButton = document.getElementById("login-button");
 
-// let signUpButton = document.getElementById("signUpButton");
-// console.log(loginButton);
-// console.log(signUpButton);
-
-
-// loginButton.addEventListener('click', async() => {
-
-//     // var inputValue = document.getElementById("field").value;
-
-//     try {
-
-
-
-//         const raw_response = await fetch(`http://localhost:8080/app/login`);
-
-//         if(!raw_response.ok){
-//             throw new Error(raw_response.status)
-//         }
-
-//         const json_data = await raw_response.json();
-
-//         console.log(json_data)
-
-//          localStorage.setItem('currentUser', JSON.stringify(json_data));
-        
-
-//         // window.location.replace("shop.html");
-
-        
-       
-          
-        
-
-        
-
-
-        
-
-      
-
-        
-
-
-
-
-//     }catch(error){
-//         console.log(error);
-//     }
-
-
-// })
-
-
-
+// let user = localStorage.getItem('currentUser');
 
 loginButton.addEventListener("click", async() => {
+
+  let username = document.getElementById("username-sign-in").value;
+  
 
   try{
 
@@ -67,14 +17,14 @@ loginButton.addEventListener("click", async() => {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.parse({username: document.getElementById("username-sign-in").value})
+      body: username
     });
     const content = await rawResponse.json();
     console.log(rawResponse)
   
     console.log(content);
 
-    localStorage.setItem('currentUser', JSON.stringify(content))
+    localStorage.setItem('currentUser', JSON.parse(content))
 
     window.location.replace("shop.html")
 

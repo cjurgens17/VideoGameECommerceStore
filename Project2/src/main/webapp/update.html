@@ -39,9 +39,8 @@
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
-                            <li><a class="dropdown-item" href="./login.html">Login</a></li>
-                            <li><a class="dropdown-item" href="./myAccount.html" onclick="displayAccount()">My
-                                    Account</a></li>
+                            <li><a class="dropdown-item" href="./login.html" >Login</a></li>
+                            <li><a class="dropdown-item" href="./myAccount.html">My Account</a></li>
                             <li><a class="dropdown-item" onclick="logOut()">Logout</a></li>
                         </ul>
                     </li>
@@ -61,40 +60,48 @@
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Welcome to Our Shop!</h1>
+                <h1 class="display-4 fw-bolder">Update Account Information</h1>
                 <p class="lead fw-normal text-white-50 mb-0"></p>
             </div>
         </div>
     </header>
 
     <!-- Body Section-->
-    <div class="text-center">
-        <div>
-            <div class="text-center">
-                <h3>Account Details</h3>
-                <div id="user-info">
-                </div>
-                <br>
-                <br>
-                <br>
-                <a class="btn btn-outline-dark" id="displayAccount" href="#" onclick="displayAccount()">Account Information</a> <a class="btn btn-outline-dark" href="./update.html">Update Account</a>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div>
-            <div class="text-center">
-                <h3>Order Details</h3>
-                <div class="order-info">
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-    </div>
+    <section class='card-holder'>
+        <div class="text-center">
+            <div class="card-header">
+                <form id="formID">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="fnUpdate" name="fnUpdate" />
+                        <label>First Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="lnUpdate" name="lnUpdate" />
+                        <label>Last Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="unUpdate" name="unUpdate" />
+                        <label>Username</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="pwUpdate" name="pwUpdate" type="password" />
+                        <label>Password</label>
+                    </div>
+                    <!-- <div class="form-floating mb-3">
+                        <input class="form-control" id="addUpdate" name="addUpdate"  />
+                        <label>Address</label>
+                    </div> -->
 
+                    <a class="btn btn-outline-dark" id="updateInfo">Update</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <br>
+    <br>
+    <br>
 
     <!-- Footer-->
     <footer class="py-5 bg-dark">
@@ -103,15 +110,14 @@
                             href="https://github.com/cjurgens17/Project2">G3 P2</a></span> 2022</strong></p>
             <p class="m-0 text-center text-white">
                 <a href="https://twitter.com" target="_blank">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-                <a href="https://facebook.com" target="_blank">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-                <a href="https://youtube.com" target="_blank">
-                    <ion-icon name="logo-youtube"></ion-icon>
-                </a>
-            </p>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>  
+                    <a href="https://facebook.com" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                 <a href="https://youtube.com" target="_blank">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a></p>
         </div>
     </footer>
 
@@ -120,6 +126,7 @@
 
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
 
     <!-- For using icons on the bottom of the page -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
