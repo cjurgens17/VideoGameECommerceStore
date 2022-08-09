@@ -26,15 +26,15 @@ public class UserServiceImpl implements UserService {
         return (primaryKey > 0) ? true: false;
     }
 
-    @Override
-    public User getUserByUsername(String username) {
-        return null;
-    }
+//    @Override
+//    public User getUserByUsername(String username) {
+//        return null;
+//    }
 
     @Override
-    public User getUserByUsernamePassword(String username, String password) {
-        System.out.println("Look Here: " + username + " with password: " + password);
-        return userRepo.findByUsername(username,password);
+    public User getUserByUsername(String username) {
+        System.out.println("Look Here: " + username);
+        return userRepo.findByUsername(username);
     }
 
 //    @Override

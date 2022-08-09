@@ -886,6 +886,9 @@
 2022-08-07 21:51:05 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.ProductsServiceImpl: getAllProducts
 2022-08-07 21:51:05 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.ProductsController: getAll
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 75390e01887831b23e35951f72bd22dab039416b
 2022-08-08 17:46:54 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: getByUsername
 2022-08-08 17:46:54 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
 2022-08-08 17:46:54 INFO  LoggingAspect:17 - Before advice for: class com.sun.proxy.$Proxy134: findByUsername
@@ -968,6 +971,7 @@
 2022-08-08 19:03:41 ERROR LoggingAspect:27 - Error when executing method: class com.revature.Project2.services.UserServiceImpl: getUserByUsernamePassword
 2022-08-08 19:03:41 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsernamePassword
 2022-08-08 19:03:41 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: getUserByUsernamePassword
+<<<<<<< HEAD
 =======
 2022-08-08 17:16:38 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: createUser
 2022-08-08 17:16:38 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: createUser
@@ -1012,3 +1016,19 @@
 2022-08-08 20:53:53 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsername
 2022-08-08 20:53:53 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: getByUsername
 >>>>>>> 2a261e916f258641b2bdd4f2d786aeb00f20ca77
+=======
+2022-08-08 20:24:01 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: getUserByUsernamePassword
+2022-08-08 20:24:01 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsernamePassword
+2022-08-08 20:24:01 INFO  LoggingAspect:17 - Before advice for: class com.sun.proxy.$Proxy134: findByUsernamePassword
+2022-08-08 20:24:01 INFO  LoggingAspect:22 - After advice for: class com.sun.proxy.$Proxy134: findByUsernamePassword
+2022-08-08 20:24:01 ERROR LoggingAspect:27 - Error when executing method: class com.revature.Project2.services.UserServiceImpl: getUserByUsernamePassword
+2022-08-08 20:24:01 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsernamePassword
+2022-08-08 20:24:01 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: getUserByUsernamePassword
+2022-08-08 20:24:04 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.controllers.UserController: getUserByUsernamePassword
+2022-08-08 20:24:04 INFO  LoggingAspect:17 - Before advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsernamePassword
+2022-08-08 20:24:04 INFO  LoggingAspect:17 - Before advice for: class com.sun.proxy.$Proxy134: findByUsernamePassword
+2022-08-08 20:24:04 INFO  LoggingAspect:22 - After advice for: class com.sun.proxy.$Proxy134: findByUsernamePassword
+2022-08-08 20:24:04 ERROR LoggingAspect:27 - Error when executing method: class com.revature.Project2.services.UserServiceImpl: getUserByUsernamePassword
+2022-08-08 20:24:04 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.services.UserServiceImpl: getUserByUsernamePassword
+2022-08-08 20:24:04 INFO  LoggingAspect:22 - After advice for: class com.revature.Project2.controllers.UserController: getUserByUsernamePassword
+>>>>>>> 75390e01887831b23e35951f72bd22dab039416b

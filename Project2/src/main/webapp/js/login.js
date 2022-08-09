@@ -17,7 +17,13 @@ loginButton.addEventListener("click", async() => {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
+<<<<<<< HEAD
       body: username
+=======
+
+      body: username
+
+>>>>>>> 75390e01887831b23e35951f72bd22dab039416b
     });
     const content = await rawResponse.json();
     console.log(rawResponse)
