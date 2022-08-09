@@ -23,21 +23,25 @@ public class Cart {
     @Column(name = "itemnum")
     private int itemNum;
 
-//    @Transient
-//    List<Products> productsList = new ArrayList<>();
+    @Column(name = "total")
+    private int total;
+
+
 
     public Cart(){
         super();
     }
 
-    public Cart(int id, String items, int itemNum) {
+    public Cart(int id, String items, int itemNum, int total) {
         this.id = id;
         this.items = items;
         this.itemNum = itemNum;
+        this.total = total;
     }
 
-    public Cart(String items, int itemNum) {
+    public Cart(String items, int itemNum, int total) {
         this.items = items;
         this.itemNum = itemNum;
+        this.total = total;
     }
 }
