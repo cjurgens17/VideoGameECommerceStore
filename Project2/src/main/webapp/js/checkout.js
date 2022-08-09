@@ -54,6 +54,12 @@ checkButton.addEventListener("click", async() => {
     
       console.log(content);
 
+      console.log("This order is complete");
+
+      // localStorage.clear(tempCart);
+
+
+      // console.log(tempCart)
 
 
       
@@ -69,7 +75,7 @@ checkButton.addEventListener("click", async() => {
     let quantity = document.getElementById("numofitems")
     quantity.innerHTML = `Quantity: ${productNum}`
     
-
+// checkButton.addEventListener("click", async)
 
 
 

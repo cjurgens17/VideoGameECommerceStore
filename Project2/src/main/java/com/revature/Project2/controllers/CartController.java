@@ -49,6 +49,7 @@ public class CartController {
 //    @PostMapping("cart")
 //    @ResponseStatus(HttpStatus.ACCEPTED)
 
+    @PostMapping("/cart")
     public ClientMessage createCart(@RequestBody Cart cart){
         return cartService.createCart(cart) ? CREATION_SUCCESSFUL : CREATION_FAILED;
     }
