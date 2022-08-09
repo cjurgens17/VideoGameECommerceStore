@@ -39,8 +39,9 @@
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
-                            <li><a class="dropdown-item" href="./login.html" >Login</a></li>
-                            <li><a class="dropdown-item" href="./myAccount.html">My Account</a></li>
+                            <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="./myAccount.html" onclick="displayAccount()">My
+                                    Account</a></li>
                             <li><a class="dropdown-item" onclick="logOut()">Logout</a></li>
                         </ul>
                     </li>
@@ -60,7 +61,7 @@
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Account Details</h1>
+                <h1 class="display-4 fw-bolder">Welcome to Our Shop!</h1>
                 <p class="lead fw-normal text-white-50 mb-0"></p>
             </div>
         </div>
@@ -71,8 +72,12 @@
         <div>
             <div class="text-center">
                 <h3>Account Details</h3>
-                <div class="user-info">
+                <div id="user-info">
                 </div>
+                <br>
+                <br>
+                <br>
+                <a class="btn btn-outline-dark" id="displayAccount" href="#" onclick="displayAccount()">Account Information</a> <a class="btn btn-outline-dark" href="./update.html">Update Account</a>
             </div>
         </div>
         <br>
@@ -106,6 +111,7 @@
                                  <a class="text-decoration-none" href="https://youtube.com" target="_blank">
                                             <ion-icon name="logo-youtube"></ion-icon>
                                         </a></p>
+            </p>
         </div>
     </footer>
 
