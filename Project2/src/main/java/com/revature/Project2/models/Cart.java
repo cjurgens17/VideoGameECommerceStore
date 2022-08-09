@@ -22,6 +22,7 @@ public class Cart {
 
     @Column(name = "itemnum")
     private int itemNum;
+<<<<<<< HEAD
 //
 //<<<<<<< HEAD
 //    @Column( name= "item_price", nullable = false)
@@ -30,6 +31,13 @@ public class Cart {
 ////    @Transient
 ////    List<Products> productsList = new ArrayList<>();
 //>>>>>>> ba8834b90579e7d4667c04f3078554147988dbd4
+=======
+
+    @Column( name= "item_price", nullable = false)
+    double price;
+//    @Transient
+//    List<Products> productsList = new ArrayList<>();
+>>>>>>> 9f3507c987583f3631b6e229d63e50e6fe8cb24f
 
     public Cart(){
         super();

@@ -17,15 +17,19 @@ import static com.revature.Project2.utils.ClientMessageUtils.*;
 @RequestMapping("/app")
 public class UserController {
 
-   @Autowired
+    @Autowired
     private UserService userService;
 
-    @PostMapping(value = "login", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public User getByUsername(@RequestParam(name="username-sign-in", defaultValue = "Buddy123") String username){
-        System.out.println("This is the username" + username);
-        return userService.getUserByUsername(username);
+    @PostMapping(value = "/login", consumes = {MediaType.APPLICATION_JSON_VALUE})
+    public User getUserByUsernamePassword(@RequestBody String username, String password)
+            {
+                 System.out.println("This is the username" + username + " & this is the password:" + password);
+                 return userService.getUserByUsernamePassword(username,password);
 
-    }
+
+            }
+
+
 
     @GetMapping("/users")
     public List<User> getAll(){
