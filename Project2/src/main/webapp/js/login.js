@@ -1,6 +1,10 @@
 async function loginUser(event){
   event.preventDefault();
 
+<<<<<<< HEAD
+  let username = document.getElementById('')
+=======
+>>>>>>> c65ee3d0fcc5e545da4a7f5efb4760ec9759b10e
 
   try{
 
@@ -14,10 +18,18 @@ async function loginUser(event){
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({username: document.getElementById('username-sign-in').value,
+<<<<<<< HEAD
+      password: document.getElementById('password-sign-in').value})
+  });
+    
+    console.log(JSON.stringify({username: document.getElementById('username-sign-in').value,
+    password: document.getElementById('password-sign-in').value}))
+=======
       password: document.getElementById('passwordsignin').value})
     });
     console.log(JSON.stringify({username: document.getElementById('username-sign-in').value,
     password: document.getElementById('passwordsignin').value}))
+>>>>>>> c65ee3d0fcc5e545da4a7f5efb4760ec9759b10e
 
     const content = await rawResponse.json();
 
@@ -41,9 +53,15 @@ async function loginUser(event){
 
     try{
 
+<<<<<<< HEAD
+      const raw_response = await fetch('http://localhost:8080/app/products')
+
+      if (!raw_response.ok){
+=======
       const raw_response = await fetch('http://localhost:8080/app/products');
 
       if(!raw_response.ok){
+>>>>>>> c65ee3d0fcc5e545da4a7f5efb4760ec9759b10e
           throw new Error(raw_response.status)
       }
 
@@ -54,10 +72,13 @@ async function loginUser(event){
       localStorage.setItem('productStorage', JSON.stringify(json_data));
 
 
+<<<<<<< HEAD
+=======
 
 
 
 
+>>>>>>> c65ee3d0fcc5e545da4a7f5efb4760ec9759b10e
     }catch(error){
       console.log(error)
     }

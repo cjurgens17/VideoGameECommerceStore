@@ -25,4 +25,6 @@ public interface UserService {
 
 
     boolean deleteUser(User user);
+
+    User getUserByUsernamePassword(String username, String password);
 }
