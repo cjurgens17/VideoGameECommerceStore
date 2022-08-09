@@ -17,8 +17,8 @@ async function loginUser(event){
       body: JSON.stringify({username: document.getElementById('username-sign-in').value,
       password: document.getElementById('passwordsignin').value})
     });
-    console.log(JSON.stringify({username: document.getElementById('username-sign-in').value},
-    {password: document.getElementById('passwordsignin').value}))
+    console.log(JSON.stringify({username: document.getElementById('username-sign-in').value,
+    password: document.getElementById('passwordsignin').value}))
    
     const content = await rawResponse.json();
     

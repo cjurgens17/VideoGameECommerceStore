@@ -48,4 +48,9 @@ public class Products implements Serializable {
         this.productName = productName;
         this.quantity = quantity;
     }
+
+    public Products(int quantity, int productId) {
+        this.productId = productId;
+        this.quantity = quantity;
+    }
 }

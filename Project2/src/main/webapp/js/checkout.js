@@ -56,6 +56,13 @@ checkButton.addEventListener("click", async() => {
     prices.innerText = `Total: ${stringPrice}`
     let quantity = document.getElementById("numofitems")
     quantity.innerHTML = `Quantity: ${productNum}`
+
+
+
+
+   
+
+
     
 
 
