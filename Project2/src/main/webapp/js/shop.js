@@ -4,6 +4,8 @@ var cart = {
     itemNum: 0
 
   }
+let tempCart = localStorage.getItem('cartStorage')
+let currentcart = JSON.parse(tempCart)  
 
 let products = localStorage.getItem('productStorage')
 let allProducts = JSON.parse(products)
@@ -508,3 +510,13 @@ button7.addEventListener('click', async() => {
             console.log(allProducts[6].quantity)
             
         });
+
+
+
+
+        async function updateCartNum(event){
+
+            let cartDisplayNum = document.getElementById("cartNumber")
+            cartDisplayNum.innerHTML = cart.itemNum;
+        }
+        
