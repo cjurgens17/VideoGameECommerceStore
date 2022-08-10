@@ -22,7 +22,7 @@ updateButton.addEventListener("click", async() => {
     //     lastName: lastName,
     //     username: username,
     //     password: password
-    //     // address: address
+
     // };
 
     //console.log(userUpdate);
