@@ -31,18 +31,26 @@ public class UserController {
         String password = user.getPassword();
         System.out.println("This is the username" + username + "password: " + user.getPassword());
         return userService.getUserByUsername(username, password);
+<<<<<<< HEAD
+=======
 
+>>>>>>> c65ee3d0fcc5e545da4a7f5efb4760ec9759b10e
     }
 
 
 
 
 
+<<<<<<< HEAD
+    @GetMapping("users")
+
+=======
 
 
     @GetMapping("users")
 
 
+>>>>>>> c65ee3d0fcc5e545da4a7f5efb4760ec9759b10e
     public List<User> getAll(){
         return userService.getAllUsers();
     }
