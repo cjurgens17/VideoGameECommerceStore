@@ -1,11 +1,13 @@
 // Update User Information
 let updateButton = document.getElementById("updateAccount");
-let user = localStorage.getItem('currentUser');
+let currentUser = localStorage.getItem('currentUser');
+let updatedUser = JSON.parse(currentUser)
 
-checkButton.addEventListener("click", async() => {
+updateButton.addEventListener("click", async() => {
     // Event.preventDefault();
 
     console.log(currentUser)
+    console.log(updatedUser)
 
     let firstName = document.getElementById("fnUpdate").value;
     let lastName = document.getElementById("lnUpdate").value;
@@ -13,27 +15,35 @@ checkButton.addEventListener("click", async() => {
     let password = document.getElementById("pwUpdate").value;
     // let address = document.getElementById("addUpdate").value;
 
-    let userUpdate = {
-        firstName: firstName,
-        lastName: lastName,
-        username: username,
-        password: password
-        // address: address
-    };
+    let userId = updatedUser.id
+    console.log(userId)
+    // let userUpdate = {
+    //     firstName: firstName,
+    //     lastName: lastName,
+    //     username: username,
+    //     password: password
+    //     // address: address
+    // };
 
-    console.log(userUpdate);
+    //console.log(userUpdate);
 
     try {
         
-        const raw_resp = await fetch('http://localhost:8080/app/user', {
+        const raw_resp = await fetch(`http://localhost:8080/app/userUpdate`, {
 
             method: "PUT",
             headers: {
-                "Content-Type": "application/json",
-                "User-Id": user.userID
+              "Content-Type": "application/json"
             },
-            body: userUpdate
-        });
+            body: JSON.stringify({firstName:firstName, lastName:lastName, username:username, password:password, id:userId})
+          })
+          console.log(JSON.stringify({firstName:firstName, lastName:lastName, username:username, password:password, id:userId}))
+
+          const content = await raw_resp.json()
+
+
+
+         window.location.replace("login.html")
 
     } catch (error) {
         console.log(error)
