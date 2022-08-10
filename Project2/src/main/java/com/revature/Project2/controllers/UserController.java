@@ -55,10 +55,16 @@ public class UserController {
         return userService.createUser(user) ? CREATION_SUCCESSFUL : CREATION_FAILED;
     }
 
-    @PutMapping("/user")
-    public ClientMessage updateUser(@RequestBody User user){
-        return userService.updateUser(user) >0? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 
+    @PutMapping(value = "/userUpdate", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ClientMessage updateUser(@RequestBody User user) {
+        System.out.println(user);
+        System.out.println("id: " + user.getId());
+        System.out.println("username: " + user.getUsername());
+        System.out.println("password: " + user.getPassword());
+        System.out.println("last: " + user.getLastName());
+        System.out.println("first: " + user.getFirstName());
+        return userService.updateUser(user) > 0 ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
     }
 
     @DeleteMapping("/user")

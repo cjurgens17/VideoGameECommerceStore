@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService {
     private UserRepo userRepo;
 
     @Autowired
-    public UserServiceImpl(UserRepo userRepo){
+    public UserServiceImpl(UserRepo userRepo) {
         this.userRepo = userRepo;
     }
 
@@ -23,28 +23,22 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean createUser(User user) {
         int primaryKey = userRepo.save(user).getId();
-        return (primaryKey > 0) ? true: false;
+        return (primaryKey > 0) ? true : false;
     }
 
-<<<<<<< HEAD
+
     @Override
     public User getUserByUsernamePassword(String username, String password) {
         System.out.println("Look Here: " + username + " with a password of:" + password);
         return userRepo.findByUsername(username, password);
     }
-=======
 
-
->>>>>>> c65ee3d0fcc5e545da4a7f5efb4760ec9759b10e
 
     @Override
     public User getUserByUsername(String username, String password) {
         System.out.println("Look Here: " + username);
         return userRepo.findByUsername(username, password);
-<<<<<<< HEAD
-=======
 
->>>>>>> c65ee3d0fcc5e545da4a7f5efb4760ec9759b10e
     }
 
 //    @Override
@@ -64,13 +58,15 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int updateUser(User user) {
-        return userRepo.update(user.getUsername(), user.getId());
+            return userRepo.update(user.getFirstName(), user.getLastName(), user.getUsername(), user.getPassword(), user.getId());
+        }
+
+        @Override
+        public boolean deleteUser (User user){
+            userRepo.delete(user);
+            return true;
+        }
+
     }
 
-    @Override
-    public boolean deleteUser(User user) {
-        userRepo.delete(user);
-        return true;
-    }
 
-}

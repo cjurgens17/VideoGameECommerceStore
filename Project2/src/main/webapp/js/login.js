@@ -2,7 +2,7 @@ async function loginUser(event){
   event.preventDefault();
 
 
-  let username = document.getElementById('')
+  
 
 
   try{
@@ -18,11 +18,11 @@ async function loginUser(event){
       },
       body: JSON.stringify({username: document.getElementById('username-sign-in').value,
 
-      password: document.getElementById('password-sign-in').value})
+      password: document.getElementById('passwordsignin').value})
   });
     
     console.log(JSON.stringify({username: document.getElementById('username-sign-in').value,
-    password: document.getElementById('password-sign-in').value}))
+    password: document.getElementById('passwordsignin').value}))
 
       
    

@@ -1,41 +1,47 @@
 // Update User Information
+let updateButton = document.getElementById("updateInfo");
+let thisUser = localStorage.getItem('currentUser');
+let updateUser = JSON.parse(thisUser)
 
-let user = localStorage.getItem('currentUser');
 
-async function updateAccount(event) {
-    event.preventDefault();
+updateButton.addEventListener('click', async() => {
+    
 
     let firstName = document.getElementById("fnUpdate").value;
     let lastName = document.getElementById("lnUpdate").value;
     let username = document.getElementById("unUpdate").value;
     let password = document.getElementById("pwUpdate").value;
+    let userid = updateUser.id;
     // let address = document.getElementById("addUpdate").value;
 
-    let userUpdate = {
-        firstName: firstName,
-        lastName: lastName,
-        username: username,
-        password: password
-        // address: address
-    };
+    // let userUpdate = {
+    //     firstName: firstName,
+    //     lastName: lastName,
+    //     username: username,
+    //     password: password,
+    //     id: userid
+    //     // address: address
+    // };
 
-    console.log(userUpdate);
+    
 
     try {
         
-        const raw_resp = await fetch('http://localhost:8080/app/update', {
+        const raw_resp = await fetch(`http://localhost:8080/app/userUpdate`, {
 
-            method: "POST",
+            method: "PUT",
             headers: {
-                "Content-Type": "application/json",
-                "User-Id": user.userID
+                "Content-Type": "application/json"
             },
-            body: userUpdate
+            body: JSON.stringify({firstName: firstName, lastName: lastName, username: username, password: password, id: userid})
         });
+        console.log(JSON.stringify({firstName: firstName, lastName: lastName, username: username, password: password, id: userid}))
+
+        
 
     } catch (error) {
         console.log(error)
     }
 
     
-};
+});

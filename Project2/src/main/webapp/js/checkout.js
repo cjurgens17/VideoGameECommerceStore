@@ -29,7 +29,7 @@ for(let i = 0; i < currentcart.name.length; i++) {
 }
 
 
-function cartTotal(){
+
 for(let j = 0; j < currentcart.num.length; j++) {
   
     
@@ -39,7 +39,7 @@ for(let j = 0; j < currentcart.num.length; j++) {
   
     
 }
-}
+
 
 console.log(pName)
 console.log(stringPrice)
@@ -49,7 +49,7 @@ console.log(productNum)
 
 checkButton.addEventListener("click", async() => {
 
-    const rawResponse = await fetch('http://localhost:8080/app/cart', {
+    const rawResponse = await fetch('http://localhost:8080/app/createCart', {
 
         method: 'POST',
 
@@ -59,6 +59,7 @@ checkButton.addEventListener("click", async() => {
         },
         body: JSON.stringify({items: pName , itemNum: productNum, total: stringPrice })
       });
+      console.log(JSON.stringify({items: pName , itemNum: productNum, total: stringPrice }))
       const content = await rawResponse.json();
     
       console.log(content);

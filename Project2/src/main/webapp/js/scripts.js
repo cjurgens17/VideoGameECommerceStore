@@ -11,7 +11,7 @@
 let user = localStorage.getItem('currentUser');
 let cUser = JSON.parse(user);
 
-let cart = localStorage.getItem('cartStorage');
+// let cart = localStorage.getItem('cartStorage');
 
 // User LogOut Function
 function logOut() {

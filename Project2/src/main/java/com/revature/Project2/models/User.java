@@ -38,10 +38,7 @@ public class User {
 
 
     public User(int id, String firstName, String lastName, String username, Cart cart, String password) {
-<<<<<<< HEAD
-=======
 
->>>>>>> c65ee3d0fcc5e545da4a7f5efb4760ec9759b10e
         super();
         this.id = id;
         this.firstName = firstName;
