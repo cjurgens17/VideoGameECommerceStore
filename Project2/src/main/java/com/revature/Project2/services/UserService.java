@@ -14,7 +14,9 @@ public interface UserService {
 
 //    User getUserById(int id);
 
-//    User getUserById(String username);
+//    User getUserByUsername(String username);
+
+//    User getUserByUsernamePassword(String username, String password);
 
     List<User> getAllUsers();
 
@@ -23,4 +25,6 @@ public interface UserService {
 
 
     boolean deleteUser(User user);
+
+    User getUserByUsernamePassword(String username, String password);
 }

@@ -36,21 +36,30 @@ public class User {
         super();
     }
 
+
     public User(int id, String firstName, String lastName, String username, Cart cart, String password) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> c65ee3d0fcc5e545da4a7f5efb4760ec9759b10e
         super();
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
+        this.password = password;
         this.cart = cart;
         this.password = password;
     }
 
+
     public User(String firstName, String lastName, String username, Cart cart, String password) {
+
         super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
+        this.password = password;
         this.cart = cart;
         this.password = password;
     }

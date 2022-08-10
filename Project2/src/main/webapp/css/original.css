@@ -96,6 +96,28 @@ img{
   object-fit: cover;
 }
 
+.social-icon{ 
+  position:relative;
+  left: 770px;
+  color: rgb(125, 133, 245);
+  transition: color 0.2s;
+  text-decoration: none;
+  margin: 0px 50px;
+  
+
+}
+.social-icon:hover{
+  color: rgb(47, 24, 179)
+}
+
+div {
+  justify-content: center;
+}
+
+form {
+  align-self: center;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -4551,6 +4573,7 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
+  align-self: center;
 }
 
 .card-title {
@@ -11293,5 +11316,3 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-
-

@@ -14,6 +14,9 @@ let userStorage = localStorage.getItem('currentUser')
 let currentUser = JSON.parse(userStorage)
 console.log(currentUser)
 
+
+
+
 let button0 = document.getElementById("button0");
 
 button0.addEventListener('click', async() => {
@@ -21,6 +24,7 @@ button0.addEventListener('click', async() => {
         cart.num.push(allProducts[0].price);
         cart.name.push(allProducts[0].productName);
         cart.itemNum += 1;
+
 
         console.log('This is the Cart: ')
         console.log(cart)
@@ -33,6 +37,7 @@ button0.addEventListener('click', async() => {
 
         console.log('this is the tempCart')
         console.log(localStorage.getItem('cartStorage'));
+
 
 
         updateInv = {
@@ -76,11 +81,13 @@ button0.addEventListener('click', async() => {
            allProducts[0].quantity = allProducts[0].quantity -1
            console.log(allProducts[0].quantity)
         
+
 })
 
 let button1 = document.getElementById("button1");
 
 button1.addEventListener('click', async() => {
+
 
 
         cart.num.push(allProducts[1].price);
@@ -92,7 +99,9 @@ button1.addEventListener('click', async() => {
 
         localStorage.setItem('cartStorage', JSON.stringify(cart));
 
+
         
+
 
         console.log('this is the tempCart')
         console.log(localStorage.getItem('cartStorage'));
@@ -140,6 +149,7 @@ button1.addEventListener('click', async() => {
         
 
    
+
 })
 
 let button2 = document.getElementById("button2");
@@ -156,6 +166,7 @@ button2.addEventListener('click', async() => {
     console.log(cart)
 
     localStorage.setItem('cartStorage', JSON.stringify(cart));
+
 
     
 
@@ -204,6 +215,7 @@ button2.addEventListener('click', async() => {
        console.log(allProducts[2].quantity)
         
    
+
 })
 
 let button3 = document.getElementById("button3");
@@ -219,10 +231,12 @@ button3.addEventListener('click', async() => {
 
         localStorage.setItem('cartStorage', JSON.stringify(cart));
 
+
         
 
         console.log('this is the tempCart')
         console.log(localStorage.getItem('cartStorage'));
+
 
 
         updateInv = {
@@ -265,6 +279,7 @@ button3.addEventListener('click', async() => {
 
            allProducts[3].quantity = allProducts[3].quantity -1
            console.log(allProducts[3].quantity)
+
 })
 
 let button4 = document.getElementById("button4");
@@ -280,10 +295,12 @@ button4.addEventListener('click', async() => {
 
     localStorage.setItem('cartStorage', JSON.stringify(cart));
 
+
     
 
     console.log('this is the tempCart')
     console.log(localStorage.getItem('cartStorage'));
+
 
     updateInv = {
         quan: allProducts[4].quantity - 1,
@@ -325,6 +342,7 @@ button4.addEventListener('click', async() => {
 
        allProducts[4].quantity = allProducts[4].quantity -1
        console.log(allProducts[4].quantity)
+
 })
 
 let button5 = document.getElementById("button5");
@@ -340,10 +358,12 @@ button5.addEventListener('click', async() => {
 
     localStorage.setItem('cartStorage', JSON.stringify(cart));
 
+
     
 
     console.log('this is the tempCart')
     console.log(localStorage.getItem('cartStorage'));
+
 
 
     updateInv = {
@@ -386,6 +406,7 @@ button5.addEventListener('click', async() => {
 
        allProducts[5].quantity = allProducts[5].quantity -1
        console.log(allProducts[5].quantity)
+
 })
 
 let button6 = document.getElementById("button6");
@@ -401,10 +422,12 @@ button6.addEventListener('click', async() => {
 
     localStorage.setItem('cartStorage', JSON.stringify(cart));
 
+
     
 
     console.log('this is the tempCart')
     console.log(localStorage.getItem('cartStorage'));
+
 
 
     updateInv = {
@@ -447,13 +470,16 @@ button6.addEventListener('click', async() => {
 
        allProducts[7].quantity = allProducts[7].quantity -1
        console.log(allProducts[7].quantity)
+
 })
 
 let button7 = document.getElementById("button7");
 
 button7.addEventListener('click', async() => {
 
+
         cart.num.push(allProducts[6].price);
+
         cart.name.push(allProducts[6].productName);
         cart.itemNum += 1;
 
@@ -466,6 +492,7 @@ button7.addEventListener('click', async() => {
 
         console.log('this is the tempCart')
         console.log(localStorage.getItem('cartStorage'));
+
 
 
         updateInv = {
@@ -520,3 +547,6 @@ button7.addEventListener('click', async() => {
             cartDisplayNum.innerHTML = cart.itemNum;
         }
         
+
+
+

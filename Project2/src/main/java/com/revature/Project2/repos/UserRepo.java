@@ -15,10 +15,19 @@ public interface UserRepo extends JpaRepository<User, Integer> {
     @Query(value = "UPDATE userz SET username=?1 WHERE user_id=?2", nativeQuery = true)
     public int update(String username, int id);
 
+
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> c65ee3d0fcc5e545da4a7f5efb4760ec9759b10e
     @Query(value = "SELECT * FROM userz WHERE username=?1 AND pass_word=?2", nativeQuery = true)
     public User findByUsername(String username, String password);
 
 
+    @Query(value = "SELECT * FROM userz WHERE username=?1 AND pass_word=?2", nativeQuery = true)
+    public User findByUsernamePassword(String username, String password);
 
 
 }

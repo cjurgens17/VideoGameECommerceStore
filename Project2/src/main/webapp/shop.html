@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/original.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -30,18 +30,18 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="./shop.html">Home</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./shop.html" style="color:black">Shop</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Login</a>
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:black">Login</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="./register.html">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
-                            <li><a class="dropdown-item" href="./login.html">Login</a></li>
-                            <li><a class="dropdown-item" href="./myAccount.html">My Account</a></li>
-                            <li><a class="dropdown-item" href="./logout.html">Logout</a></li>
+                            <li><a class="dropdown-item" href="./login.html" >Login</a></li>
+                            <li><a class="dropdown-item" href="./myAccount.html" onclick="displayAccount()">My Account</a></li>
+                            <li><a class="dropdown-item" onclick="logOut()">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -79,14 +79,14 @@
                             alt="..." />
 
                         <!-- Product details-->
-                        <div class="card-body p-4">
+                        <div class="card-body p-4" style="color:black">
                             <div class="text-center">
 
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Nintendo 64</h5>
 
                                 <!-- Product price-->
-                                $299.99
+                                $199.00
                             </div>
                         </div>
 
@@ -108,7 +108,7 @@
                         <img class="card-img-top" src="https://i.ytimg.com/vi/HSTsyGbUvts/maxresdefault.jpg"
                             alt="..." />
                         <!-- Product details-->
-                        <div class="card-body p-4">
+                        <div class="card-body p-4" style="color:black">
                             <div class="text-center">
                                 <!-- Product name-->
                                 <div class="text-center">
@@ -117,7 +117,7 @@
                                     <h5 class="fw-bolder">Super Nintendo Entertainment System</h5>
 
                                     <!-- Product price-->
-                                    $149.99
+                                    $299.00
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@
                             src="https://i.etsystatic.com/14105542/r/il/9a8286/2922738890/il_fullxfull.2922738890_dcfy.jpg"
                             alt="..." />
                         <!-- Product details-->
-                        <div class="card-body p-4">
+                        <div class="card-body p-4" style="color:black">
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Nintendo Entertainment System (Bundle)</h5>
@@ -152,8 +152,8 @@
                                     <div class="bi-star-fill"></div>
                                 </div>
                                 <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$199.99</span>
-                                $149.99
+                                <span class="text-muted text-decoration-line-through">$499.99</span>
+                                $399.00
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -170,7 +170,7 @@
                         <img class="card-img-top" src="https://i.ebayimg.com/images/g/DPAAAOSwcEBfIHIY/s-l500.jpg"
                             alt="..." />
                         <!-- Product details-->
-                        <div class="card-body p-4">
+                        <div class="card-body p-4" style="color:black">
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Playstation 1</h5>
@@ -183,7 +183,7 @@
                                     <div class="bi-star-fill"></div>
                                 </div>
                                 <!-- Product price-->
-                                $89.99
+                                $250.00
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -203,17 +203,19 @@
                         <img class="card-img-top" src="https://images.nintendolife.com/4ea6bf73707d2/1280x720.jpg"
                             alt="..." />
                         <!-- Product details-->
-                        <div class="card-body p-4">
+                        <div class="card-body p-4" style="color:black">
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Gameboy</h5>
                                 <!-- Product price-->
-                                $50.00
+                                $150.00
                             </div>
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+
                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" id="button4" onClick="updateCartNum(event);">Add to Cart</a>
+
                             </div>
                         </div>
                     </div>
@@ -226,13 +228,13 @@
                             src="https://us-1ab6d.kxcdn.com/wp-content/uploads/2021/08/20200907_235654_f27603eb-2b18-4b4d-acdf-62066c482943-scaled-450x450.jpg"
                             alt="..." />
                         <!-- Product details-->
-                        <div class="card-body p-4">
+                        <div class="card-body p-4" style="color:black">
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Xbox</h5>
                                 <p>Comes with an extra controller!</p>
                                 <!-- Product price-->
-                                $159.99
+                                $300.00
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -247,11 +249,13 @@
                         <!-- Sale badge-->
                         <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
                         </div>
-                        
+
                         <!-- 6 => Product image-->
-                        <img class="card-img-top" src="https://cdn.mos.cms.futurecdn.net/oTZrV3efiUoftU9xqVnnhk.jpg"
+                        <img class="card-img-top"
+                            src="https://cdn.vox-cdn.com/thumbor/Ec5GzedKTvzWe5MguK33wGRdfjU=/0x0:5722x2220/1200x480/filters:focal(2404x653:3318x1567)/cdn.vox-cdn.com/uploads/chorus_image/image/57139401/sega_mini_genesis_review_166.0.jpg"
                             alt="..." />
                         <!-- Product details-->
+
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
@@ -284,6 +288,7 @@
                             " alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
+
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Sega Genesis</h5>
@@ -293,27 +298,40 @@
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star"></div>
                                 </div>
                                 <!-- Product price-->
-                                $259.99
+                                $500.00
+
                             </div>
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+
                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" id="button7" onClick="updateCartNum(event);">Add to Cart</a>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">&copy; <strong><span><a href="https://github.com/cjurgens17/Project2">G3 P2</a></span> 2022</strong></p>
+            <p class="m-0 text-center text-white">&copy; <strong><span><a
+                            href="https://github.com/cjurgens17/Project2">G3 P2</a></span> 2022</strong></p>
+            <p class="m-0 text-center text-white">
+                <a class="text-decoration-none" href="https://twitter.com" target="_blank">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>  
+                    <a class="text-decoration-none"href="https://facebook.com" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                 <a class="text-decoration-none" href="https://youtube.com" target="_blank">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a></p>
         </div>
     </footer>
 
@@ -325,6 +343,11 @@
 
     <!-- Required JS -->
     <script type="text/javascript" src="./js/shop.js"></script>
+
+    <!-- For using icons on the bottom of the page -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>

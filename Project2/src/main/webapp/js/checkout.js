@@ -4,9 +4,11 @@ let currentcart = JSON.parse(tempCart)
 
 
 console.log(currentcart)
+
 let products = localStorage.getItem('productStorage')
 let allProducts = JSON.parse(products)
 console.log(allProducts)
+
 
 let pName = "";
 let stringPrice = 0;
@@ -19,19 +21,25 @@ for(let i = 0; i < currentcart.name.length; i++) {
  
 
   
+
   pName += `${currentcart.name[i]} `
   
   
+
 }
-  
+
+
+function cartTotal(){
 for(let j = 0; j < currentcart.num.length; j++) {
   
     
   stringPrice += currentcart.num[j] + stringPrice;
+
+
   
     
 }
-
+}
 
 console.log(pName)
 console.log(stringPrice)
@@ -54,6 +62,9 @@ checkButton.addEventListener("click", async() => {
       const content = await rawResponse.json();
     
       console.log(content);
+
+
+
       
 
 
@@ -211,6 +222,11 @@ addTable();
 
 
 
+      
+
+
+
+
 
 
     
@@ -218,6 +234,7 @@ addTable();
 
 
       
+
 
 
 

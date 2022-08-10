@@ -39,8 +39,8 @@
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
-                            <li><a class="dropdown-item" href="./login.html" >Login</a></li>
-                            <li><a class="dropdown-item" href="./myAccount.html" onclick="displayAccount()">My Account</a></li>
+                            <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="./myAccount.html">My Account</a></li>
                             <li><a class="dropdown-item" onclick="logOut()">Logout</a></li>
                         </ul>
                     </li>
@@ -60,29 +60,44 @@
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Welcome to Our Shop!</h1>
+                <h1 class="display-4 fw-bolder">Update Account Information</h1>
                 <p class="lead fw-normal text-white-50 mb-0"></p>
             </div>
         </div>
     </header>
 
-    <!-- Section-->
-    <section class='card-holder1'>
-        <div class="text-center">
-            <h3>
-                <br>
-                Welcome to G3, your number one spot for retro console systems!
-                <br>
-                <br>
-                Bringing back childhood memories, one video game at a time!
-                <br>
-                <br>
-                Please go to our Shop page to see all our available products!
-
-            </h3>
-        </div>
-
-    </section>
+    <!-- Body Section-->
+    <table align="center" width="30%">
+        <tr>
+            <td>
+                <form>
+                    <br>
+                    <br>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="first-name-input" name="first-name-input" />
+                        <label>First Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="last-name-input" name="last-name-input" />
+                        <label>Last Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="username-input" name="username-input" />
+                        <label>Username</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="password-input" name="password-input" type="password" />
+                        <label>Password</label>
+                    </div>
+                    <!-- <div class="form-floating mb-3">
+                        <input class="form-control" id="addUpdate" name="addUpdate"  />
+                        <label>Address</label>
+                    </div> -->
+                </form>
+                <center><a class="btn btn-outline-dark" id="updateInfo">Update</a></center>
+            </td>
+        </tr>
+    </table>
 
 
     <br>
@@ -113,15 +128,11 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
-    <!-- Required JS -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/shopify-cartjs/1.1.0/cart.min.js"></script>
 
-    
-        <!-- For using icons on the bottom of the page -->
+    <!-- For using icons on the bottom of the page -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    </body>
+</body>
 
 </html>
