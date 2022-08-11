@@ -108,7 +108,7 @@ function addTable() {
     for (var j = 0; j < 1; j++) {
       var td = document.createElement('TD');
       td.width = '800';
-      td.appendChild(document.createTextNode("Item: " + currentcart.name[i] + "   Price: " + currentcart.num[j]));
+      td.appendChild(document.createTextNode("Item: " + currentcart.name[i] + "   Price: " + currentcart.num[i]));
       tr.appendChild(td);
 
 
