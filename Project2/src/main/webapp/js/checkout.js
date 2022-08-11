@@ -64,6 +64,9 @@ checkButton.addEventListener("click", async () => {
 
   console.log(content);
 
+  localStorage.removeItem('cartStorage')
+  window.location.replace('shop.html')
+
 
 
 
