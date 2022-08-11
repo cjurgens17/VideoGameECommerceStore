@@ -544,7 +544,7 @@ button7.addEventListener('click', async() => {
         async function updateCartNum(event){
 
             let cartDisplayNum = document.getElementById("cartNumber")
-            cartDisplayNum.innerHTML = cart.itemNum;
+            cartDisplayNum.innerHTML = cart.itemNum + 1;
         }
         
 

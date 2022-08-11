@@ -39,11 +39,21 @@ public class ProductsController {
 
     @PutMapping("product")
     public ClientMessage updateProducts(@RequestBody Products products){
-        int quantity = products.getQuantity() ;
+        int quantity = products.getQuantity();
         int productId = products.getProductId();
         System.out.println("The quantity is: " + quantity);
         System.out.println("The id is: " + productId);
         return productsService.updateProducts(products) >0? UPDATE_SUCCESSFUL : UPDATE_FAILED;
+
+    }
+
+    @PutMapping("productDelete")
+    public ClientMessage updateProductsDelete(@RequestBody Products products){
+        int quantity = products.getQuantity();
+        int productId = products.getProductId();
+        System.out.println("The quantity is: " + quantity);
+        System.out.println("The id is: " + productId);
+        return productsService.updateProductsDelete(products) >0? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 
     }
 
