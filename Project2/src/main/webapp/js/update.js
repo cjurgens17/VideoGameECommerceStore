@@ -37,11 +37,29 @@ updateButton.addEventListener('click', async() => {
         });
         console.log(JSON.stringify({firstName: firstName, lastName: lastName, username: username, password: password, id: userid}))
 
+        const content = await raw_resp.json();
+        console.log(content)
+        localStorage.setItem('currentUser',JSON.stringify(content))
+        window.location.replace("login.html")
+
         
 
     } catch (error) {
         console.log(error)
     }
 
+   
+    
+
     
 });
+
+
+function displayAccount2() {
+    console.log(updateUser);
+    let info = document.getElementById("user-info");
+    info.innerText = `Name: ${updateUser.firstName} ${updateUser.lastName}`
+    info.append(document.createElement("br"));
+    info.append(`Username: ${updateUser.username}`);
+    // info.append(`Address: ${cUser.address}`);
+}

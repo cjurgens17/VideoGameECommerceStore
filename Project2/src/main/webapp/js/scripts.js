@@ -5,11 +5,13 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+let user = localStorage.getItem('currentUser');
+    let cUser = JSON.parse(user);
 
 // Functions by Li Villaranda
 
-let user = localStorage.getItem('currentUser');
-let cUser = JSON.parse(user);
+// let user = localStorage.getItem('currentUser');
+// let cUser = JSON.parse(user);
 
 // let cart = localStorage.getItem('cartStorage');
 
@@ -20,7 +22,7 @@ function logOut() {
 }
 
 // Display Account Information
-function displayAccount() {
+    function displayAccount(){
     console.log(cUser);
     let info = document.getElementById("user-info");
     info.innerText = `Name: ${cUser.firstName} ${cUser.lastName}`

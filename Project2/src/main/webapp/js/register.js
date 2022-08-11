@@ -22,6 +22,8 @@ registerButton.addEventListener("click", async() => {
       const content = await rawResponse.json();
     
       console.log(content);
+
+      window.location.replace('login.html')
     });
 
 

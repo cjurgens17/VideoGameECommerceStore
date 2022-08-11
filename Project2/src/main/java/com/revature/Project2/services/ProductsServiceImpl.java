@@ -42,7 +42,12 @@ public class ProductsServiceImpl implements ProductsService {
 
     @Override
     public int updateProducts(Products products) {
-        return productsRepo.update(products.getQuantity() ,products.getProductId());
+        return productsRepo.update(products.getQuantity()-1,products.getProductId());
+    }
+
+    @Override
+    public int updateProductsDelete(Products products) {
+        return  productsRepo.update(products.getQuantity()+1,products.getProductId());
     }
 
     @Override
