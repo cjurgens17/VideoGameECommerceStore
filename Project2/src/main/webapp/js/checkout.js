@@ -3,11 +3,19 @@ let tempCart = localStorage.getItem('cartStorage')
 let currentcart = JSON.parse(tempCart)
 
 
+
 console.log(currentcart)
 
 let products = localStorage.getItem('productStorage')
 let allProducts = JSON.parse(products)
 console.log(allProducts)
+
+
+
+
+
+
+
 
 
 let pName = "";
@@ -30,15 +38,18 @@ for (let i = 0; i < currentcart.name.length; i++) {
 
 
 
-for (let j = 0; j < currentcart.num.length; j++) {
+for (let j = 0; j < currentcart.itemNum; j++) {
 
 
-  stringPrice += currentcart.num[j] + stringPrice;
+  stringPrice += currentcart.num[j] 
 
 
 
 
 }
+//total price for cart
+let total = document.getElementById('totalPrice')
+total.innerText = `Total: $${stringPrice.toFixed(2)}`
 
 
 console.log(pName)
