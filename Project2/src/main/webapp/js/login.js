@@ -65,6 +65,7 @@ async function loginUser(event){
 
 
       localStorage.setItem('productStorage', JSON.stringify(json_data));
+      
 
 
 
